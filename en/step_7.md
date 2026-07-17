@@ -4,6 +4,8 @@ A game with only one fruit is a bit dull. In this step, you'll add more fruit an
 
 --- task ---
 
+![the fruit sprite.](images/fruit.png)
+
 Click the **Costumes** tab for your fruit sprite. Add a new costume — choose another fruit, draw your own, or duplicate the first one and change it. Give it eyes, and make sure it has a **solid outline of one colour** all the way around, just like your first fruit.
 
 Add a third costume the same way, so you have three different fruit.

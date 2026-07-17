@@ -1,8 +1,12 @@
-## Challenge: stack them
+## Challenge: stack them up
 
 Your game works! Right now, though, different fruit fall straight through each other. If you want them to pile up in a satisfying heap, you can make each fruit rest on top of fruit that isn't its match.
 
 --- task ---
+
+![the fruit sprite.](images/fruit.png)
+
+In the `Fruit` sprite:
 
 For each costume, add a check: if the clone is touching **either of the other two colours**, nudge it back up so it stacks instead of overlapping. It's the same trick you used for the floor — fall a little, then push back up.
 
@@ -28,6 +32,7 @@ delete this clone
 end
 if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
 change y by (4.1)
+end
 end
 end
 ```

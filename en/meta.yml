@@ -9,14 +9,14 @@ steps:
     completion:
       - engaged
   - title: Clone the fruit
-  - title: Make it fall
-  - title: Make it land
-  - title: Pop the fruit
-  - title: Add more fruit
+  - title: Make them fall
+  - title: Make them land
   - title: Pop by colour
+  - title: Add more fruit
+  - title: Pop all the fruits
     completion:
       - internal
-  - title: 'Challenge: stack them'
+  - title: 'Challenge: stack them up'
     challenge: true
   - title: More challenges
     challenge: true

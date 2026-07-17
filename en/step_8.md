@@ -1,8 +1,12 @@
-## Pop by colour
+## Pop all the fruits
 
 At the moment every fruit pops against every other colour. In this step, you'll make each fruit only pop with its **own** kind.
 
 --- task ---
+
+![the fruit sprite.](images/fruit.png)
+
+In the `Fruit` sprite:
 
 Wrap your pop code in a check for which costume the clone is wearing. Put the `touching color ()?`{:class="block3sensing"} code you built in step 6 inside an `if (costume number) = (1)`{:class="block3control"} block, using the `costume ()`{:class="block3looks"} reporter and the `=`{:class="block3operators"} operator.
 

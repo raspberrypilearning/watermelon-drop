@@ -4,6 +4,10 @@ In this step, you'll make a copy — a **clone** — every time the player click
 
 --- task ---
 
+![the fruit sprite.](images/fruit.png)
+
+In the `Fruit` sprite:
+
 Change your `when green flag clicked`{:class="block3events"} script. Instead of moving the fruit itself, `create clone of (myself v)`{:class="block3control"} while the mouse is held down, with a short `wait (0.1) seconds`{:class="block3control"} so you get separate fruit instead of hundreds at once.
 
 Take the `go to x: () y: ()`{:class="block3motion"} block out of this script — the clone will use it next.

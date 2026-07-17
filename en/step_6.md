@@ -1,4 +1,4 @@
-## Pop the fruit
+## Pop by colour
 
 Now for the heart of the game: when two of the same fruit touch, one of them should pop and disappear.
 
@@ -10,6 +10,10 @@ Now for the heart of the game: when two of the same fruit touch, one of them sho
      ============================================================ -->
 
 --- task ---
+
+![the fruit sprite.](images/fruit.png)
+
+In the `Fruit` sprite:
 
 First, make your fruit a single, solid colour so Scratch can spot when two are touching. In the paint editor, change the outline to match the middle — or draw a bold outline in one colour all the way around the edge.
 

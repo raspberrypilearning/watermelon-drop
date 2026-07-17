@@ -4,6 +4,8 @@ In this step, you'll make each clone fall down the screen.
 
 --- task ---
 
+![the fruit sprite.](images/fruit.png)
+
 Go to your fruit sprite's `when I start as a clone`{:class="block3control"} script. Add a `forever`{:class="block3control"} loop that makes the clone fall by changing its `y`{:class="block3motion"} position again and again.
 
 ```blocks3
