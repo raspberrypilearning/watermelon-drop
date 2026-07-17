@@ -19,8 +19,8 @@ Now drop a random fruit each time. At the top of your `when I start as a clone`{
 ```blocks3
 when I start as a clone
 +switch costume to (pick random (1) to (3))
-go to x: (mouse x) y: (110)
-play sound (Pop v)
+go to x: (mouse x) y: (115)
+start sound (Pop v)
 ```
 
 --- /task ---

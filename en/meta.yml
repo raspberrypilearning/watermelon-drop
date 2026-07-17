@@ -1,23 +1,23 @@
 title: Watermelon drop
 hero_image: images/banner.png
-description: Make a fruit-dropping game where matching fruit merge, and try not to overflow the box.
+description: Make a fruit-dropping game where matching fruit pop, and try not to overflow the box.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Make the fruit sprite
+  - title: Add your first fruit
     completion:
       - engaged
   - title: Clone the fruit
-  - title: Drop the fruit
+  - title: Make it fall
   - title: Add a floor
-  - title: Land the fruit on the floor
-  - title: Merge fruit that touch
+  - title: Make it land
+  - title: Pop matching fruit
   - title: Add more fruit
-  - title: Match each fruit to its colour
+  - title: Pop by colour
     completion:
       - internal
-  - title: 'Challenge: make your fruit stack'
+  - title: 'Challenge: stack them'
     challenge: true
   - title: More challenges
     challenge: true

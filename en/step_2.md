@@ -1,38 +1,56 @@
-## Make the fruit sprite
+## Add your first fruit
 
-In this step, you'll add the first piece of fruit and make it follow the mouse pointer.
+In this step, you'll add the first piece of fruit and make it follow the mouse pointer, ready to drop.
 
 --- task ---
 
 Start a new Scratch project and delete the cat sprite.
 
-Add a new sprite for your fruit. You can choose any fruit you like from the sprite library — or an animal, or anything you want to see drop into the box!
+Add a new sprite for your fruit — choose any fruit you like from the library, or an animal, or anything you want to see drop into the box. Use the paint tools to give it some character: a pair of eyes and a mouth. Resize it so a few could fit in a box.
+
+![PLACEHOLDER GIF: choosing a fruit sprite and drawing a face on it.](images/choose-fruit.gif)
 
 --- /task ---
 
 --- task ---
 
-Use the paint tools to give your sprite some character: add a pair of eyes and a mouth. Resize it so a few could fit in a box.
-
-![PLACEHOLDER GIF: choosing a fruit sprite and drawing a face on it with the paint tools.](images/choose-fruit.gif)
-
---- /task ---
-
---- task ---
-
-Now make your fruit follow the mouse pointer along the top of the screen, ready to drop.
-
-Add a `when green flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} loop. Inside the loop, check whether the player is holding the mouse down, and if they are, send the fruit to the mouse pointer's `x`{:class="block3sensing"} position near the top of the screen.
+Add a `when green flag clicked`{:class="block3events"} block and a `go to x: () y: ()`{:class="block3motion"} block to place your fruit near the top of the stage.
 
 ```blocks3
 when green flag clicked
-forever
-if <mouse down?> then
-go to x: (mouse x) y: (110)
-end
+go to x: (0) y: (115)
+```
+
+--- /task ---
+
+--- task ---
+
+Now make the fruit follow the mouse pointer. Wrap the `go to x: () y: ()`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its `x`{:class="block3motion"} to the `mouse x`{:class="block3sensing"} position.
+
+```blocks3
+when green flag clicked
++forever
+go to x: (mouse x) y: (115)
 end
 ```
 
 --- /task ---
 
-Click the green flag, then click and hold anywhere near the top of the stage. Your fruit follows the mouse pointer left and right.
+--- task ---
+
+Finally, only move the fruit while the player is holding the mouse down. Put the `go to x: () y: ()`{:class="block3motion"} block inside an `if <mouse down?> then`{:class="block3control"} block.
+
+```blocks3
+when green flag clicked
+forever
++if <mouse down?> then
+go to x: (mouse x) y: (115)
+end
+end
+```
+
+![PLACEHOLDER GIF: clicking to move the fruit along the top.](images/mouse-click.gif)
+
+--- /task ---
+
+Click the green flag, then click and hold near the top of the stage. Your fruit follows the mouse pointer left and right.

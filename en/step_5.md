@@ -1,4 +1,4 @@
-## Make a floor
+## Add a floor
 
 Your fruit falls straight off the bottom of the screen. In this step, you'll make a floor for it to land on.
 
@@ -7,8 +7,6 @@ Your fruit falls straight off the bottom of the screen. In this step, you'll mak
 Add a new sprite. Choose **Paint** to draw your own, then draw a line or a solid rectangle across the middle of the paint area. This will be the floor your fruit rests on.
 
 Name the sprite `Floor`.
-
-![PLACEHOLDER GIF: painting a floor sprite as a line or rectangle.](images/paint-floor.gif)
 
 --- /task ---
 

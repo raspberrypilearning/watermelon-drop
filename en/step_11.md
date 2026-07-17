@@ -14,7 +14,7 @@ set x to (mouse x)
 end
 ```
 
-![PLACEHOLDER PNG: the dropper sprite (a cloud with a face) at the top of the stage.](images/dropper.png)
+![PLACEHOLDER PNG: the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud.png)
 
 --- /task ---
 
@@ -60,6 +60,8 @@ show
 play sound (Lose v) until done
 stop (all v)
 ```
+
+> If your game-over screen keeps flashing or replaying, make sure the fruit uses `broadcast () and wait`{:class="block3events"} (not plain `broadcast`) and that the `Game over` sprite ends with `stop (all v)` — otherwise it keeps re-triggering.
 
 --- /task ---
 

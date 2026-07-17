@@ -1,4 +1,4 @@
-## Land the fruit on the floor
+## Make it land
 
 The fruit still falls straight through the floor. In this step, you'll make it stop when it lands.
 
@@ -19,6 +19,6 @@ end
 
 > The fruit falls by 4 each time, then jumps back up by 4.1 when it touches the floor. Those two numbers almost cancel out, so the fruit wobbles gently on the surface instead of falling through or bouncing away.
 
-![PLACEHOLDER GIF: fruit dropping and coming to rest on the floor.](images/land-on-floor.gif)
+![PLACEHOLDER GIF: fruit dropping and coming to rest on the floor.](images/fall-floor.gif)
 
 Click the green flag and drop some fruit. It falls and lands on the floor. If it sinks or bounces oddly, adjust your `Floor` sprite or the numbers a little.

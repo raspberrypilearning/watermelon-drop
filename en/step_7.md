@@ -1,6 +1,6 @@
-## Merge fruit that touch
+## Pop matching fruit
 
-Now for the heart of the game: when two of the same fruit touch, one of them should merge away.
+Now for the heart of the game: when two of the same fruit touch, one of them should pop and disappear.
 
 --- task ---
 
@@ -20,15 +20,19 @@ Click the colour box in the `touching color ()?`{:class="block3sensing"} block, 
 +if <touching color (#4e9a06)?> then
 change y by (-4.2)
 wait (0.2) seconds
-play sound (Squish Pop v)
+start sound (Lo Gliss Tabla v)
 delete this clone
 end
 ```
 
 ![PLACEHOLDER GIF: using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif)
 
+![PLACEHOLDER GIF: the fruit popping when two of the same touch.](images/duplicate-if.gif)
+
 --- /task ---
 
 > The `wait (0.2) seconds`{:class="block3control"} matters: it only deletes **one** clone, so it gives the fruit already sitting there a moment to notice the collision too.
 
 Click the green flag and drop two of the same fruit onto each other. When they touch, one pops and disappears.
+
+![PLACEHOLDER GIF: two watermelons touching and one popping.](images/pop.gif)

@@ -1,12 +1,6 @@
 ## What you will make
 
-You will make a fruit-dropping game. Every time the player clicks, a piece of fruit drops into the box. When two of the same fruit touch, they merge and disappear — but if the fruit pile up too high, it's game over!
-
---- print-only ---
-
-![A box slowly filling with different pieces of fruit, each with a little face.](images/finished-project.png)
-
---- /print-only ---
+You will make a fruit-dropping game. Every time the player clicks, a piece of fruit drops into the box. When two of the same fruit touch, they pop and disappear — but if the fruit pile up too high, it's game over!
 
 --- no-print ---
 
