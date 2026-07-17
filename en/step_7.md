@@ -1,38 +1,41 @@
-## Pop matching fruit
+## Add more fruit
 
-Now for the heart of the game: when two of the same fruit touch, one of them should pop and disappear.
+A game with only one fruit is a bit dull. In this step, you'll add more fruit and drop a random one each time.
 
 --- task ---
 
-First, make your fruit a single, solid colour so Scratch can spot when two are touching. In the paint editor, change the outline to match the middle — or draw a bold outline in one colour all the way around the edge.
+Click the **Costumes** tab for your fruit sprite. Add a new costume — choose another fruit, draw your own, or duplicate the first one and change it. Give it eyes, and make sure it has a **solid outline of one colour** all the way around, just like your first fruit.
 
-![PLACEHOLDER GIF: recolouring the fruit's outline so it is one solid colour.](images/solid-colour.gif)
+Add a third costume the same way, so you have three different fruit.
+
+![adding a second and third fruit costume in the Costumes tab.](images/add-costumes.gif)
 
 --- /task ---
 
 --- task ---
 
-Inside the `forever`{:class="block3control"} loop of your clone script, add code so that when a clone is `touching color ()?`{:class="block3sensing"} — the colour of your fruit — it plays a sound and removes itself with `delete this clone`{:class="block3control"}.
-
-Click the colour box in the `touching color ()?`{:class="block3sensing"} block, choose the eyedropper, and click your fruit to pick its exact colour.
+Now drop a random fruit each time. At the top of your `when I start as a clone`{:class="block3control"} script, add a block to `switch costume to ()`{:class="block3looks"} a random one using `pick random () to ()`{:class="block3operators"}.
 
 ```blocks3
-+if <touching color (#4e9a06)?> then
+when I start as a clone
++switch costume to (pick random (1) to (3))
+go to x: (mouse x) y: (115)
+start sound (Pop v)
+show
+forever
+change y by (-4)
+if <touching (Floor v)?> then
+change y by (4.1)
+end
+if <touching color (#4e9a06)?> then
 change y by (-4.2)
 wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
 delete this clone
 end
+end
 ```
-
-![PLACEHOLDER GIF: using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif)
-
-![PLACEHOLDER GIF: the fruit popping when two of the same touch.](images/duplicate-if.gif)
 
 --- /task ---
 
-> The `wait (0.2) seconds`{:class="block3control"} matters: it only deletes **one** clone, so it gives the fruit already sitting there a moment to notice the collision too.
-
-Click the green flag and drop two of the same fruit onto each other. When they touch, one pops and disappears.
-
-![PLACEHOLDER GIF: two watermelons touching and one popping.](images/pop.gif)
+Click the green flag and drop some fruit. A random one of your three fruit appears each time.

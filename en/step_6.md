@@ -1,24 +1,55 @@
-## Make it land
+## Pop the fruit
 
-The fruit still falls straight through the floor. In this step, you'll make it stop when it lands.
+Now for the heart of the game: when two of the same fruit touch, one of them should pop and disappear.
+
+<!-- ============================================================
+     AUTHOR TODO (Becca): REDO THE GIF IN THIS STEP.
+     The blocks shown in the current gif are WRONG and will
+     confuse learners — re-record it against the full script
+     below before publishing.
+     ============================================================ -->
 
 --- task ---
 
-Go to your fruit sprite. Inside the `forever`{:class="block3control"} loop of your `when I start as a clone`{:class="block3control"} script, check whether the clone is `touching (Floor v)?`{:class="block3sensing"}. If it is, nudge it back up so it settles on top instead of sinking through.
+First, make your fruit a single, solid colour so Scratch can spot when two are touching. In the paint editor, change the outline to match the middle — or draw a bold outline in one colour all the way around the edge.
+
+![recolouring the fruit's outline so it is one solid colour.](images/solid-colour.gif)
+
+--- /task ---
+
+--- task ---
+
+Inside the `forever`{:class="block3control"} loop of your clone script, add code so that when a clone is `touching color ()?`{:class="block3sensing"} — the colour of your fruit — it plays a sound and removes itself with `delete this clone`{:class="block3control"}.
+
+> **Tip:** in game-making, this is called a **collision**. 
+
+Click the colour box in the `touching color ()?`{:class="block3sensing"} block, choose the eyedropper, and click your fruit to pick its exact colour.
 
 ```blocks3
+when I start as a clone
+go to x: (mouse x) y: (115)
+start sound (Pop v)
+show
 forever
 change y by (-4)
-+if <touching (Floor v)?> then
+if <touching (Floor v)?> then
 change y by (4.1)
+end
++if <touching color (#4e9a06)?> then
+change y by (-4.2)
+wait (0.2) seconds
+start sound (Lo Gliss Tabla v)
+delete this clone
 end
 end
 ```
 
+![using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif)
+
 --- /task ---
 
-> The fruit falls by 4 each time, then jumps back up by 4.1 when it touches the floor. Those two numbers almost cancel out, so the fruit wobbles gently on the surface instead of falling through or bouncing away.
+> The `wait (0.2) seconds`{:class="block3control"} matters: it only deletes **one** clone, so it gives the fruit already sitting there a moment to notice the collision too.
 
-![PLACEHOLDER GIF: fruit dropping and coming to rest on the floor.](images/fall-floor.gif)
+Click the green flag and drop two of the same fruit onto each other. When they touch, one pops and disappears.
 
-Click the green flag and drop some fruit. It falls and lands on the floor. If it sinks or bounces oddly, adjust your `Floor` sprite or the numbers a little.
+![two watermelons touching and one popping.](images/pop.gif)

@@ -1,6 +1,6 @@
 ## Clone the fruit
 
-One fruit isn't much of a game. In this step, you'll make a copy — a **clone** — every time the player clicks.
+In this step, you'll make a copy — a **clone** — every time the player clicks.
 
 --- task ---
 
@@ -30,10 +30,8 @@ go to x: (mouse x) y: (115)
 start sound (Pop v)
 ```
 
-![PLACEHOLDER GIF: a new fruit appearing each time you click.](images/clone.gif)
+![a new fruit appearing each time you click.](images/clone.gif)
 
 --- /task ---
-
-> Note: the pop sound belongs on every fruit from here on, so add it to your clones now.
 
 Click the green flag, then click and hold. A new piece of fruit appears at the mouse pointer each time, with a pop.

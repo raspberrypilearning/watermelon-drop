@@ -1,19 +1,34 @@
-## Pop by colour
+## Challenge: stack them
 
-At the moment every fruit pops against every other colour. In this step, you'll make each fruit only pop with its **own** kind.
+Your game works! Right now, though, different fruit fall straight through each other. If you want them to pile up in a satisfying heap, you can make each fruit rest on top of fruit that isn't its match.
 
 --- task ---
 
-Wrap your pop code in a check for which costume the clone is wearing. Put the `touching color ()?`{:class="block3sensing"} code you built in step 7 inside an `if (costume number) = (1)`{:class="block3control"} block, using the `costume ()`{:class="block3looks"} reporter and the `=`{:class="block3operators"} operator.
+For each costume, add a check: if the clone is touching **either of the other two colours**, nudge it back up so it stacks instead of overlapping. It's the same trick you used for the floor — fall a little, then push back up.
+
+Add this inside your `if (costume number) = (1)`{:class="block3control"} block, below the pop check:
 
 ```blocks3
-+if <(costume [number v]) = (1)> then
+when I start as a clone
+switch costume to (pick random (1) to (3))
+go to x: (mouse x) y: (115)
+start sound (Pop v)
+show
+forever
+change y by (-4)
+if <touching (Floor v)?> then
+change y by (4.1)
+end
+if <(costume [number v]) = (1)> then
 if <touching color (#4e9a06)?> then
 change y by (-4.2)
 wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
 delete this clone
 end
+if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
+change y by (4.1)
+end
 end
 ```
 
@@ -21,37 +36,13 @@ end
 
 --- task ---
 
-Right-click the `if (costume number) = (1)`{:class="block3control"} block and choose **Duplicate** to make a copy for your second fruit. Change the costume number to `2`, eyedrop the colour of your **second** costume into its `touching color ()?`{:class="block3sensing"} block, and choose a different sound.
+Now do the same for your other two costumes, changing the two colours each time to name the **other** fruit.
 
-Then duplicate it once more for your third fruit: costume number `3`, its colour, and its own sound.
+tip: Each `if (costume number) = ()`{:class="block3control"} block should end up mentioning all three colours: one that deletes the fruit, and two that make it stack.
 
-```blocks3
-+if <(costume [number v]) = (2)> then
-if <touching color (#ec1c2c)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Chomp v)
-delete this clone
-end
-end
-+if <(costume [number v]) = (3)> then
-if <touching color (#edd51c)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Squish Pop v)
-delete this clone
-end
-end
-```
-
-![PLACEHOLDER GIF: changing the colour for each duplicated costume check.](images/duplicate-colour.gif)
 
 --- /task ---
 
-> The colours shown here are just an example — use the eyedropper to pick the real colour of each of your costumes.
+Click the green flag and fill the box. Different fruit now stack up into a pile, and matching fruit still pop.
 
-> **Tip:** it's easy to lose track of which check is which. Right-click a block and choose **Add Comment** to label each one with its fruit's name.
-
-![PLACEHOLDER GIF: adding comments to label each costume check.](images/adding-comments.gif)
-
-Click the green flag and drop lots of fruit. Now each fruit only pops when it touches another of its own kind.
+![fruit of different types piling up in a stack.](images/stacking.gif)

@@ -15,7 +15,7 @@ change y by (-4)
 end
 ```
 
-![PLACEHOLDER GIF: the clones falling down the screen.](images/falling.gif)
+![the clones falling down the screen.](images/falling.gif)
 
 --- /task ---
 

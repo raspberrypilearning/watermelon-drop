@@ -8,7 +8,7 @@ Start a new Scratch project and delete the cat sprite.
 
 Add a new sprite for your fruit — choose any fruit you like from the library, or an animal, or anything you want to see drop into the box. Use the paint tools to give it some character: a pair of eyes and a mouth. Resize it so a few could fit in a box.
 
-![PLACEHOLDER GIF: choosing a fruit sprite and drawing a face on it.](images/choose-fruit.gif)
+![choosing a fruit sprite and drawing a face on it.](images/choose-fruit.gif)
 
 --- /task ---
 
@@ -49,7 +49,7 @@ end
 end
 ```
 
-![PLACEHOLDER GIF: clicking to move the fruit along the top.](images/mouse-click.gif)
+![clicking to move the fruit along the top.](images/mouse-click.gif)
 
 --- /task ---
 

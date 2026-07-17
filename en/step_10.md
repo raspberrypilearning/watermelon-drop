@@ -1,39 +1,87 @@
-## Challenge: stack them
+## More challenges
 
-Your game works! Right now, though, different fruit fall straight through each other. If you want them to pile up in a satisfying heap, you can make each fruit rest on top of fruit that isn't its match.
+You've made a complete fruit-dropping game. Here are some more ways to make it your own. Try any that appeal to you — each one is optional.
 
 --- task ---
 
-For each costume, add a check: if the clone is touching **either of the other two colours**, nudge it back up so it stacks instead of overlapping. It's the same trick you used for the floor — fall a little, then push back up.
-
-For your first fruit, add this inside its `if (costume number) = (1)`{:class="block3control"} block, below the pop check:
+**Add a dropper.** Add a sprite at the top that follows the mouse pointer, so the player can see where the next fruit will land. The example game uses a cloud — but you could give yours eyes and a mouth to make it a character.
 
 ```blocks3
-if <(costume [number v]) = (1)> then
-if <touching color (#4e9a06)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Lo Gliss Tabla v)
-delete this clone
-end
-+if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
-change y by (4.1)
-end
+when green flag clicked
+go to x: (-8) y: (159)
+forever
+set x to (mouse x)
 end
 ```
 
-![PLACEHOLDER GIF: adding the stacking check to the first fruit.](images/make-it-stack.gif)
+![the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud.png)
 
 --- /task ---
 
 --- task ---
 
-Now copy that new `if`{:class="block3control"} into your other two costume checks. Each time, change the two colours so they name the **other** fruit — the ones that costume should *not* pop with.
+**Add a box or basket.** Draw a box or basket sprite for the fruit to fall into, and send it to the back so the fruit sit inside it.
 
-> **Tip:** in game-making, this is called a **collision**. Each `if (costume number) = ()`{:class="block3control"} block should end up mentioning all three colours: one that deletes the fruit, and two that make it stack.
+```blocks3
+when green flag clicked
+go to x: (0) y: (0)
+go to (back v) layer
+```
 
-![PLACEHOLDER GIF: fruit of different types piling up in a stack.](images/stacking.gif)
+![an example box for the fruit to fall into.](images/box.png)
 
 --- /task ---
 
-Click the green flag and fill the box. Different fruit now stack up into a pile, and matching fruit still pop.
+--- task ---
+
+**Keep score.** Add a `score`{:class="block3variables"} variable, set it to `0`{:class="block3variables"} when the flag is clicked, and `change score by ()`{:class="block3variables"} just before each `delete this clone`{:class="block3control"}. Give different fruit different points!
+
+```blocks3
+change [score v] by (10)
+delete this clone
+```
+
+--- /task ---
+
+--- task ---
+
+**Add a game over.** When a fruit ends up too high, the box has overflowed. In your clone's `forever`{:class="block3control"} loop, check its `y`{:class="block3motion"} position and `broadcast () and wait`{:class="block3events"} a `Game over` message.
+
+```blocks3
+if <(y position) > (111)> then
+broadcast (Game over v) and wait
+end
+```
+
+Then add a `Game over` sprite that hides at the start and shows when it gets the message:
+
+```blocks3
+when I receive (Game over v)
+go to (front v) layer
+show
+play sound (Lose v) until done
+stop (all v)
+```
+
+> If your game-over screen keeps flashing or replaying, make sure the fruit uses `broadcast () and wait`{:class="block3events"} (not plain `broadcast`) and that the `Game over` sprite ends with `stop (all v)` — otherwise it keeps re-triggering.
+
+![an example game over screen.](images/game-over.png)
+
+--- /task ---
+
+--- task ---
+
+**Add music.** Choose a backdrop for the stage, then loop a sound track so your game has a soundtrack.
+
+```blocks3
+when green flag clicked
+forever
+play sound (your track v) until done
+end
+```
+
+![an example backdrop for the stage.](images/bd.png)
+
+--- /task ---
+
+When you've finished, save your project. Well done — you've made your own Watermelon drop!

@@ -10,9 +10,8 @@ steps:
       - engaged
   - title: Clone the fruit
   - title: Make it fall
-  - title: Add a floor
   - title: Make it land
-  - title: Pop matching fruit
+  - title: Pop the fruit
   - title: Add more fruit
   - title: Pop by colour
     completion:
