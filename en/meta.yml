@@ -1,14 +1,25 @@
-title: Project title in sentence case
+title: Watermelon drop
 hero_image: images/banner.png
-description: A short description of the project
+description: Make a fruit-dropping game where matching fruit merge, and try not to overflow the box.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Step title
+  - title: Make the fruit sprite
     completion:
-      - engaged      
-  - title: Challenge
+      - engaged
+  - title: Clone the fruit
+  - title: Drop the fruit
+  - title: Add a floor
+  - title: Land the fruit on the floor
+  - title: Merge fruit that touch
+  - title: Add more fruit
+  - title: Match each fruit to its colour
+    completion:
+      - internal
+  - title: 'Challenge: make your fruit stack'
+    challenge: true
+  - title: More challenges
     challenge: true
     completion:
       - external
