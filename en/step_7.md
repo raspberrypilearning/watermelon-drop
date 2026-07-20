@@ -1,22 +1,25 @@
 ## Add more fruit
 
-A game with only one fruit is a bit dull. In this step, you'll add more fruit and drop a random one each time.
+In this step, you'll add more fruit!
 
 --- task ---
 
 ![the fruit sprite.](images/fruit.png)
 
-Click the **Costumes** tab for your fruit sprite. Add a new costume — choose another fruit, draw your own, or duplicate the first one and change it. Give it eyes, and make sure it has a **solid outline of one colour** all the way around, just like your first fruit.
+Click the **Costumes** tab for your fruit sprite and add a new costume for each new kind of fruit you want. To keep it simple, try adding one or two more to start with.
 
-Add a third costume the same way, so you have three different fruit.
+Make sure the new fruit have a **solid outline of one colour** all the way around, just like your first fruit.
 
-![adding a second and third fruit costume in the Costumes tab.](images/add-costumes.gif)
+![adding a second and third fruit costume in the Costumes tab.](images/add-costumes.png)
 
 --- /task ---
 
 --- task ---
 
-Now drop a random fruit each time. At the top of your `when I start as a clone`{:class="block3control"} script, add a block to `switch costume to ()`{:class="block3looks"} a random one using `pick random () to ()`{:class="block3operators"}.
+Now `switch costume` to `random`{:class="block3operators"} before the clone shows, so that a different fruit appears each time.
+
+Fill in the random numbers for the number of costumes you have.
+
 
 ```blocks3
 when I start as a clone
@@ -30,7 +33,6 @@ if <touching (Floor v)?> then
 change y by (4.1)
 end
 if <touching color (#4e9a06)?> then
-change y by (-4.2)
 wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
 delete this clone
@@ -40,4 +42,4 @@ end
 
 --- /task ---
 
-Click the green flag and drop some fruit. A random one of your three fruit appears each time.
+**Test:** Click the green flag and click the mouse to check if a random one of your fruit appears each time.

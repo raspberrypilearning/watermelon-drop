@@ -4,7 +4,27 @@ You've made a complete fruit-dropping game. Here are some more ways to make it y
 
 --- task ---
 
-**Add a dropper.** Add a sprite at the top that follows the mouse pointer, so the player can see where the next fruit will land. The example game uses a cloud — but you could give yours eyes and a mouth to make it a character.
+### Add music
+
+Choose a backdrop for the stage, then loop a sound track so your game has a soundtrack.
+
+```blocks3
+when green flag clicked
+forever
+play sound (your track v) until done
+end
+```
+
+![an example backdrop for the stage.](images/bd.png)
+
+--- /task ---
+
+
+--- task ---
+
+### Add a dropper sprite
+
+Add a sprite at the top that follows the mouse pointer, so the player can see where the next fruit will land. The example game uses a cloud — but you could give yours eyes and a mouth to make it a character.
 
 ```blocks3
 when green flag clicked
@@ -14,13 +34,15 @@ set x to (mouse x)
 end
 ```
 
-![the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud.png)
+![the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud-screen.png)
 
 --- /task ---
 
 --- task ---
 
-**Add a box or basket.** Draw a box or basket sprite for the fruit to fall into, and send it to the back so the fruit sit inside it.
+### Add a box or basket
+
+Draw a box or basket sprite for the fruit to fall into, and send it to the back so the fruit sit inside it.
 
 ```blocks3
 when green flag clicked
@@ -28,7 +50,7 @@ go to x: (0) y: (0)
 go to (back v) layer
 ```
 
-![an example box for the fruit to fall into.](images/box.png)
+![an example box for the fruit to fall into.](images/box-screen.png)
 
 --- /task ---
 
@@ -36,7 +58,9 @@ go to (back v) layer
 
 ![the fruit sprite.](images/fruit.png)
 
-**Keep score.** Add a `score`{:class="block3variables"} variable, set it to `0`{:class="block3variables"} when the flag is clicked, and `change score by ()`{:class="block3variables"} just before each `delete this clone`{:class="block3control"}. Give different fruit different points!
+### Keep score
+
+Add a `score`{:class="block3variables"} variable, set it to `0`{:class="block3variables"} when the flag is clicked, and `change score by ()`{:class="block3variables"} just before each `delete this clone`{:class="block3control"}. Give different fruit different points!
 
 ```blocks3
 change [score v] by (10)
@@ -49,7 +73,9 @@ delete this clone
 
 ![the fruit sprite.](images/fruit.png)
 
-**Add a game over.** When a fruit ends up too high, the box has overflowed. In your clone's `forever`{:class="block3control"} loop, check its `y`{:class="block3motion"} position and `broadcast () and wait`{:class="block3events"} a `Game over` message.
+### Add a game over
+
+When a fruit ends up too high, the box has overflowed. In your clone's `forever`{:class="block3control"} loop, check its `y`{:class="block3motion"} position and `broadcast () and wait`{:class="block3events"} a `Game over` message.
 
 ```blocks3
 if <(y position) > (111)> then
@@ -67,25 +93,6 @@ play sound (Lose v) until done
 stop (all v)
 ```
 
-> If your game-over screen keeps flashing or replaying, make sure the fruit uses `broadcast () and wait`{:class="block3events"} (not plain `broadcast`) and that the `Game over` sprite ends with `stop (all v)` — otherwise it keeps re-triggering.
-
 ![an example game over screen.](images/game-over.png)
 
 --- /task ---
-
---- task ---
-
-**Add music.** Choose a backdrop for the stage, then loop a sound track so your game has a soundtrack.
-
-```blocks3
-when green flag clicked
-forever
-play sound (your track v) until done
-end
-```
-
-![an example backdrop for the stage.](images/bd.png)
-
---- /task ---
-
-When you've finished, save your project. Well done — you've made your own Watermelon drop!

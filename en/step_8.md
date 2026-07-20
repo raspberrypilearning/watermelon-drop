@@ -1,48 +1,20 @@
-## Pop all the fruit
+## Make every fruit disappear
 
-At the moment every fruit pops against every other colour. In this step, you'll make each fruit only pop with its **own** kind.
+Your fruit only disappear when they touch the green one — none of the other colours do anything yet.
+
+In this step, you'll make every fruit disappear with its own kind.
 
 --- task ---
 
 ![the fruit sprite.](images/fruit.png)
 
-In the `Fruit` sprite:
-
-Wrap your pop code in a check for which costume the clone is wearing. Put the `touching color ()?`{:class="block3sensing"} code you built in step 6 inside an `if (costume number) = (1)`{:class="block3control"} block, using the `costume ()`{:class="block3looks"} reporter and the `=`{:class="block3operators"} operator.
+In the fruit sprite wrap these blocks into an `if`{:class="block3control"} to check the costume number is `1`. 
 
 ```blocks3
 +if <(costume [number v]) = (1)> then
 if <touching color (#4e9a06)?> then
-change y by (-4.2)
 wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
-delete this clone
-end
-end
-```
-
---- /task ---
-
---- task ---
-
-Right-click the `if (costume number) = (1)`{:class="block3control"} block and choose **Duplicate** to make a copy for your second fruit. Change the costume number to `2`, eyedrop the colour of your **second** costume into its `touching color ()?`{:class="block3sensing"} block, and choose a different sound.
-
-Then duplicate it once more for your third fruit: costume number `3`, its colour, and its own sound.
-
-```blocks3
-+if <(costume [number v]) = (2)> then
-if <touching color (#ec1c2c)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Chomp v)
-delete this clone
-end
-end
-+if <(costume [number v]) = (3)> then
-if <touching color (#edd51c)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Squish Pop v)
 delete this clone
 end
 end
@@ -52,10 +24,39 @@ end
 
 --- /task ---
 
-> The colours shown here are just an example — use the eyedropper to pick the real colour of each of your costumes.
+--- task ---
 
-> **Tip:** it's easy to lose track of which check is which. Right-click a block and choose **Add Comment** to label each one with its fruit's name.
+Right-click and **duplicate** the block.
+
+--- /task ---
+
+--- task ---
+
+Change the costume number to `2` and use the eyedropper for the colour of your **second** costume. You can also choose a different sound.
+
+Then duplicate it once more for your third fruit.
+
+```blocks3
++if <(costume [number v]) = (2)> then
+if <touching color (#ec1c2c)?> then
+wait (0.2) seconds
+start sound (Chomp v)
+delete this clone
+end
+end
++if <(costume [number v]) = (3)> then
+if <touching color (#edd51c)?> then
+wait (0.2) seconds
+start sound (Squish Pop v)
+delete this clone
+end
+end
+```
+
+--- /task ---
+
+**Tip:** it's easy to lose track of the blocks. Right-click and choose **Add Comment** to label each one with its fruit's name.
 
 ![adding comments to label each costume check.](images/adding-comments.gif)
 
-Click the green flag and drop lots of fruit. Now each fruit only pops when it touches another of its own kind.
+Click the green flag to test. Now each fruit disappears when it touches another of the same colour. 

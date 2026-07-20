@@ -9,11 +9,11 @@ steps:
     completion:
       - engaged
   - title: Clone the fruit
-  - title: Make them fall
+  - title: Drop them
   - title: Make them land
-  - title: Pop by colour
+  - title: Make the fruit disappear
   - title: Add more fruit
-  - title: Pop all the fruit
+  - title: Make every fruit disappear
     completion:
       - internal
   - title: 'Challenge: stack them up'

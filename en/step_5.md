@@ -1,14 +1,19 @@
 ## Make them land
 
-Your fruit falls straight off the bottom of the screen. In this step, you'll add a floor and make the fruit land on it.
+Add a floor and make the fruit land on it.
 
 --- task ---
 
-Add a new sprite. Choose **Paint** to draw your own, then draw a line or a solid rectangle across the middle of the paint area. This will be the floor your fruit rests on.
+In the add sprite icon, choose **Paint** to draw a new sprite and name it **Floor**.
 
-Name the sprite `Floor`.
+--- /task ---
+
+
+--- task ---
 
 ![an example floor: a simple coloured bar across the stage.](images/floor.png)
+
+Use the edit tools to draw a line or a solid rectangle across the middle of the paint area. This will be the floor your fruit rests on.
 
 --- /task ---
 
@@ -21,15 +26,13 @@ when green flag clicked
 go to x: (7) y: (-125)
 ```
 
-> You can change these numbers to move your floor higher or lower — drag the sprite where you want it and Scratch fills in the `x`{:class="block3motion"} and `y`{:class="block3motion"} for you.
-
 --- /task ---
 
 --- task ---
 
 ![the fruit sprite.](images/fruit.png)
 
-Now go to your fruit sprite. Inside the `forever`{:class="block3control"} loop of your `when I start as a clone`{:class="block3control"} script, check whether the clone is `touching (Floor v)?`{:class="block3sensing"}. If it is, nudge it back up so it settles on top instead of sinking through.
+In the fruit sprite, add an `if`{:class="block3control"} block to check whether the clone is `touching (Floor)?`{:class="block3sensing"}. If it is, `change`{:class="block3motion"} it back up so it settles on top instead of sinking through.
 
 ```blocks3
 forever
@@ -40,10 +43,10 @@ end
 end
 ```
 
+**Tip:** The fruit falls by 4 each time, then jumps back up by 4.1 when it touches the floor. Those two numbers almost cancel out, so the fruit looks like it is wobbling.
 --- /task ---
 
-> The fruit falls by 4 each time, then jumps back up by 4.1 when it touches the floor. Those two numbers almost cancel out, so the fruit wobbles gently on the surface instead of falling through or bouncing away.
+
+**Test:** Click the green flag and check that the fruit falls and lands on the floor.
 
 ![fruit dropping and coming to rest on the floor.](images/fall-floor.gif)
-
-Click the green flag and drop some fruit. It falls and lands on the floor.

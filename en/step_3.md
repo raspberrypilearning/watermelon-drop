@@ -1,16 +1,16 @@
 ## Clone the fruit
 
-In this step, you'll make a copy — a **clone** — every time the player clicks.
+The fruit you drop are **clones**, which are copies of the sprite that appear every time the mouse is clicked.
 
 --- task ---
 
 ![the fruit sprite.](images/fruit.png)
 
-In the `Fruit` sprite:
+In the fruit sprite change your `green flag`{:class="block3events"} to create a clone. 
 
-Change your `when green flag clicked`{:class="block3events"} script. Instead of moving the fruit itself, `create clone of (myself v)`{:class="block3control"} while the mouse is held down, with a short `wait (0.1) seconds`{:class="block3control"} so you get separate fruit instead of hundreds at once.
+Add a `create clone of (myself)`{:class="block3control"} block that makes a copy every time the mouse is clicked. There is a short `wait`{:class="block3control"} so you don't get hundreds appearing at once.
 
-Take the `go to x: () y: ()`{:class="block3motion"} block out of this script — the clone will use it next.
+Take the `go to x: y:`{:class="block3motion"} block out — the clone will use it next.
 
 ```blocks3
 when green flag clicked
@@ -26,7 +26,11 @@ end
 
 --- task ---
 
-Now tell each clone what to do when it appears. Add a `when I start as a clone`{:class="block3control"} script that sends the clone to the mouse pointer and plays a sound. Pick a `Pop` sound with `start sound ()`{:class="block3sound"}.
+Tell each clone what to do when it appears. 
+
+Add a `when I start as a clone`{:class="block3control"} block, with the `x: y:`{:class="block3motion"} position and add a `sound`{:class="block3sound"}. 
+
+Use the `Pop` sound or choose a sound you like from the sound library.
 
 ```blocks3
 when I start as a clone
@@ -34,8 +38,9 @@ go to x: (mouse x) y: (115)
 start sound (Pop v)
 ```
 
-![a new fruit appearing each time you click.](images/clone.gif)
-
 --- /task ---
 
-Click the green flag, then click and hold. A new piece of fruit appears at the mouse pointer each time, with a pop.
+**Test:** click the green flag, then click on the stage to check that a new piece of fruit appears with a pop.
+
+
+![a new fruit appearing each time you click.](images/clone.gif)
