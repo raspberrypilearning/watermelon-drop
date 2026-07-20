@@ -5,7 +5,7 @@ Now for the interactive bit! When two of the fruit collide, they disappear.
 This can be done using the `touching color`{:class="block3sensing"} block.
 
 --- task ---
-
+ 
 ![the fruit sprite.](images/fruit.png)
 
 In the fruit sprite give your fruit a solid outline so Scratch can spot when two are touching. 
