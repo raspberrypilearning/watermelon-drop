@@ -30,7 +30,7 @@ wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
 delete this clone
 end
-if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
++if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
 change y by (4.1)
 end
 end
@@ -43,7 +43,7 @@ end
 
 Now do the same for your other two costumes, changing the two colours each time to name the **other** fruit.
 
-tip: Each `if (costume number) = ()`{:class="block3control"} block should end up mentioning all three colours: one that deletes the fruit, and two that make it stack.
+> **Tip:** each `if (costume number) = ()`{:class="block3control"} block should end up mentioning all three colours: one that deletes the fruit, and two that make it stack.
 
 
 --- /task ---

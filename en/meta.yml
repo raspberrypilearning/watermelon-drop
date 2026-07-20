@@ -13,7 +13,7 @@ steps:
   - title: Make them land
   - title: Pop by colour
   - title: Add more fruit
-  - title: Pop all the fruits
+  - title: Pop all the fruit
     completion:
       - internal
   - title: 'Challenge: stack them up'

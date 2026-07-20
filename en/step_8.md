@@ -1,4 +1,4 @@
-## Pop all the fruits
+## Pop all the fruit
 
 At the moment every fruit pops against every other colour. In this step, you'll make each fruit only pop with its **own** kind.
 

@@ -1,4 +1,4 @@
-## Make it fall
+## Make them fall
 
 In this step, you'll make each clone fall down the screen.
 
@@ -16,8 +16,6 @@ start sound (Pop v)
 change y by (-4)
 end
 ```
-
-![the clones falling down the screen.](images/falling.gif)
 
 --- /task ---
 
@@ -55,3 +53,5 @@ end
 --- /task ---
 
 Click the green flag and drop some fruit. Each piece falls down the screen, and the original is hidden.
+
+![the clones falling down the screen.](images/falling.gif)

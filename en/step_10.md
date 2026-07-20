@@ -34,6 +34,8 @@ go to (back v) layer
 
 --- task ---
 
+![the fruit sprite.](images/fruit.png)
+
 **Keep score.** Add a `score`{:class="block3variables"} variable, set it to `0`{:class="block3variables"} when the flag is clicked, and `change score by ()`{:class="block3variables"} just before each `delete this clone`{:class="block3control"}. Give different fruit different points!
 
 ```blocks3
@@ -44,6 +46,8 @@ delete this clone
 --- /task ---
 
 --- task ---
+
+![the fruit sprite.](images/fruit.png)
 
 **Add a game over.** When a fruit ends up too high, the box has overflowed. In your clone's `forever`{:class="block3control"} loop, check its `y`{:class="block3motion"} position and `broadcast () and wait`{:class="block3events"} a `Game over` message.
 

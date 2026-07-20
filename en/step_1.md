@@ -1,6 +1,6 @@
 ## What you will make
 
-You will make a fruit-dropping game. Every time the player clicks, a piece of fruit drops into the box. When two of the same fruit touch, they pop and disappear — but if the fruit pile up too high, it's game over!
+Build a fun fruit-dropping game inspired by the watermelon (Suika) game. You'll click to drop fruit, make matching fruit pop, and see how long you can stop the box from filling up.
 
 --- no-print ---
 

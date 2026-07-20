@@ -4,6 +4,8 @@ In this step, you'll add the first piece of fruit and make it follow the mouse p
 
 --- task ---
 
+![the fruit sprite.](images/fruit.png)
+
 Start a new Scratch project and delete the cat sprite.
 
 Add a new sprite for your fruit — choose any fruit you like from the library, or an animal, or anything you want to see drop into the box. Use the paint tools to give it some character: a pair of eyes and a mouth. Resize it so a few could fit in a box.

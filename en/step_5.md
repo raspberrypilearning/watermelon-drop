@@ -1,4 +1,4 @@
-## Make it land
+## Make them land
 
 Your fruit falls straight off the bottom of the screen. In this step, you'll add a floor and make the fruit land on it.
 
@@ -26,6 +26,8 @@ go to x: (7) y: (-125)
 --- /task ---
 
 --- task ---
+
+![the fruit sprite.](images/fruit.png)
 
 Now go to your fruit sprite. Inside the `forever`{:class="block3control"} loop of your `when I start as a clone`{:class="block3control"} script, check whether the clone is `touching (Floor v)?`{:class="block3sensing"}. If it is, nudge it back up so it settles on top instead of sinking through.
 
