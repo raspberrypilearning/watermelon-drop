@@ -14,10 +14,11 @@ Take the `go to x: y:`{:class="block3motion"} block out — the clone will use i
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 forever
 if <mouse down?> then
-create clone of (myself v)
-wait (0.1) seconds
++create clone of (myself v)
++wait (0.1) seconds
 end
 end
 ```
@@ -28,14 +29,36 @@ end
 
 Tell each clone what to do when it appears. 
 
-Add a `when I start as a clone`{:class="block3control"} block, with the `x: y:`{:class="block3motion"} position and add a `sound`{:class="block3sound"}. 
-
-Use the `Pop` sound or choose a sound you like from the sound library.
+Add a `when I start as a clone`{:class="block3control"} block, with the `x: y:`{:class="block3motion"} position.
 
 ```blocks3
 when I start as a clone
 go to x: (mouse x) y: (115)
-start sound (Pop v)
+```
+
+--- /task ---
+
+--- task ---
+
+Choose a sound for when you drop the fruit. First add a new sound in the **Sounds tab**. 
+
+![The Sounds tab, where you add a new sound.](images/sounds-tab.png) 
+
+You can use the `Pop` sound or click choose a sound to select one from the sound library.
+
+![The sound choose icon.](images/sounds-choose.png) 
+
+
+--- /task ---
+
+--- task ---
+
+Then add a `start sound`{:class="block3sound"} block and select your sound from the drop-down menu.
+
+```blocks3
+when I start as a clone
+go to x: (mouse x) y: (115)
++start sound (Pop v)
 ```
 
 --- /task ---

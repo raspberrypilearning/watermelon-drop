@@ -13,6 +13,7 @@ In the fruit sprite wrap these blocks into an `if`{:class="block3control"} to ch
 ```blocks3
 +if <(costume [number v]) = (1)> then
 if <touching color (#4e9a06)?> then
+change y by (-4.2)
 wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
 delete this clone
@@ -39,6 +40,7 @@ Then duplicate it once more for your third fruit.
 ```blocks3
 +if <(costume [number v]) = (2)> then
 if <touching color (#ec1c2c)?> then
+change y by (-4.2)
 wait (0.2) seconds
 start sound (Chomp v)
 delete this clone
@@ -46,6 +48,7 @@ end
 end
 +if <(costume [number v]) = (3)> then
 if <touching color (#edd51c)?> then
+change y by (-4.2)
 wait (0.2) seconds
 start sound (Squish Pop v)
 delete this clone

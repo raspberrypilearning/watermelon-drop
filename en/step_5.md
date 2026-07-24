@@ -19,10 +19,11 @@ Use the edit tools to draw a line or a solid rectangle across the middle of the 
 
 --- task ---
 
-Move the `Floor` sprite to the bottom of the stage. Add a `when green flag clicked`{:class="block3events"} block and a `go to x: () y: ()`{:class="block3motion"} block to set its position.
+Move the `Floor` sprite to the bottom of the stage. Add a `when green flag clicked`{:class="block3events"} block, a `set drag mode [not draggable v]`{:class="block3sensing"} block so it can't be dragged, and a `go to x: () y: ()`{:class="block3motion"} block to set its position.
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 go to x: (7) y: (-125)
 ```
 

@@ -21,6 +21,7 @@ change y by (4.1)
 end
 if <(costume [number v]) = (1)> then
 if <touching color (#4e9a06)?> then
+change y by (-4.2)
 wait (0.2) seconds
 start sound (Lo Gliss Tabla v)
 delete this clone

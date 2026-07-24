@@ -28,6 +28,7 @@ Add a sprite at the top that follows the mouse pointer, so the player can see wh
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 go to x: (-8) y: (159)
 forever
 set x to (mouse x)
@@ -46,6 +47,7 @@ Draw a box or basket sprite for the fruit to fall into, and send it to the back 
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 go to x: (0) y: (0)
 go to (back v) layer
 ```
