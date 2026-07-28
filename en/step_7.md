@@ -4,22 +4,29 @@ In this step, you'll add more fruit!
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
 Click the **Costumes** tab for your fruit sprite and add a new costume for each new kind of fruit you want. To keep it simple, try adding one or two more to start with.
-
-Make sure the new fruit have a **solid outline of one colour** all the way around, just like your first fruit.
-
-![adding a second and third fruit costume in the Costumes tab.](images/add-costumes.png)
 
 --- /task ---
 
 --- task ---
 
-Now `switch costume` to `random`{:class="block3operators"} before the clone shows, so that a different fruit appears each time.
+Make sure the new fruit have a **solid outline of one colour** all the way around, just like your first fruit.
+
+![adding a second and third fruit costume in the Costumes tab.](images/add-costumes.png){:width="300"}
+
+--- /task ---
+
+> [!TIP]
+>
+> If your sprite came with extra costumes you don't want, delete them. Otherwise they'll turn up in the game too.
+
+--- task ---
+
+Now `switch costume`{:class="block3looks"} to `random`{:class="block3operators"} before the clone shows, so that a different fruit appears each time.
 
 Fill in the random numbers for the number of costumes you have.
-
 
 ```blocks3
 when I start as a clone

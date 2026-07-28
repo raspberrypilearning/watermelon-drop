@@ -15,7 +15,7 @@ play sound (your track v) until done
 end
 ```
 
-![an example backdrop for the stage.](images/bd.png)
+![an example backdrop for the stage.](images/bd.png){:width="450"}
 
 --- /task ---
 
@@ -35,7 +35,7 @@ set x to (mouse x)
 end
 ```
 
-![the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud-screen.png)
+![the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud-screen.png){:width="450"}
 
 --- /task ---
 
@@ -52,13 +52,13 @@ go to x: (0) y: (0)
 go to (back v) layer
 ```
 
-![an example box for the fruit to fall into.](images/box-screen.png)
+![an example box for the fruit to fall into.](images/box-screen.png){:width="450"}
 
 --- /task ---
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
 ### Keep score
 
@@ -73,7 +73,7 @@ delete this clone
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
 ### Add a game over
 
@@ -95,6 +95,6 @@ play sound (Lose v) until done
 stop (all v)
 ```
 
-![an example game over screen.](images/game-over.png)
+![an example game over screen.](images/game-over.png){:width="450"}
 
 --- /task ---

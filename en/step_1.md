@@ -5,7 +5,8 @@ Build a fun fruit-dropping game inspired by the watermelon (Suika) game. You'll 
 --- no-print ---
 
 <div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1362763451/?autostart=false" frameborder="0"></iframe>
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1365018960/?autostart=false" frameborder="0"></iframe>
 </div>
 
 --- /no-print ---
+

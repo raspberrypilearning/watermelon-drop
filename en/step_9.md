@@ -1,24 +1,15 @@
 ## Challenge: stack them up
 
-If you want the fruit to pile up in a heap, you can make each fruit rest on top of fruit that isn't its match.
+In this step you can make the fruit stack up if it doesn't match.
+
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
-For the first fruit costume, add an `if` to see if the fruit is `touching` **either of the other two colours**. Then `change the y` so it stacks in the same way as with the floor. 
+For the first fruit costume, add an `if`{:class="block3control"} to see if the fruit is `touching color`{:class="block3sensing"} **either of the other two colours**. Then `change y`{:class="block3motion"} so it stacks in the same way as with the floor. 
 
 ```blocks3
-when I start as a clone
-switch costume to (pick random (1) to (3))
-go to x: (mouse x) y: (115)
-start sound (Pop v)
-show
-forever
-change y by (-4)
-if <touching (Floor v)?> then
-change y by (4.1)
-end
 if <(costume [number v]) = (1)> then
 if <touching color (#4e9a06)?> then
 change y by (-4.2)
@@ -39,8 +30,10 @@ end
 
 Now do the same for your other two costumes, changing the two colours each time to name the **other** fruit.
 
+Make sure you add a new one of the touching color blocks for each extra fruit.
+
 --- /task ---
 
-Click the green flag to see if different fruit now stack up into a pile, and matching fruit still disappear.
+**Test:** click the green flag to see if different fruit now stack up into a pile, and matching fruit still disappear.
 
-![fruit of different types piling up in a stack.](images/stacking.gif)
+![fruit of different types piling up in a stack.](images/stacking.gif){:width="450"}

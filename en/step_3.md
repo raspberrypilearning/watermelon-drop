@@ -4,7 +4,7 @@ The fruit you drop are **clones**, which are copies of the sprite that appear ev
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
 In the fruit sprite change your `green flag`{:class="block3events"} to create a clone. 
 
@@ -42,11 +42,11 @@ go to x: (mouse x) y: (115)
 
 Choose a sound for when you drop the fruit. First add a new sound in the **Sounds tab**. 
 
-![The Sounds tab, where you add a new sound.](images/sounds-tab.png) 
+![The Sounds tab, where you add a new sound.](images/sounds-tab.png){:width="300"} 
 
 You can use the `Pop` sound or click choose a sound to select one from the sound library.
 
-![The sound choose icon.](images/sounds-choose.png) 
+![The sound choose icon.](images/sounds-choose.png){:width="300"} 
 
 
 --- /task ---
@@ -66,4 +66,4 @@ go to x: (mouse x) y: (115)
 **Test:** click the green flag, then click on the stage to check that a new piece of fruit appears with a pop.
 
 
-![a new fruit appearing each time you click.](images/clone.gif)
+![a new fruit appearing each time you click.](images/clone.gif){:width="450"}

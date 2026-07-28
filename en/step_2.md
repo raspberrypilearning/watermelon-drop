@@ -12,7 +12,7 @@ In this step, you'll add the first piece of fruit and make it follow the mouse p
 
 Delete the cat sprite.
 
-![Deleting the cat sprite with the trashcan.](images/delete-cat.png)
+![Deleting the cat sprite with the trashcan.](images/delete-cat.png){:width="300"}
 
 --- /task ---
 
@@ -21,7 +21,7 @@ Delete the cat sprite.
 
 Choose a new sprite for your fruit — choose one from the library (or draw your own). It can be any fruit you like, or even an animal, or anything you want to see drop into the box. 
 
-![The Choose a Sprite menu.](images/choose-sprite.png)
+![The Choose a Sprite menu.](images/choose-sprite.png){:width="300"}
 
 --- /task ---
 
@@ -29,13 +29,13 @@ Choose a new sprite for your fruit — choose one from the library (or draw your
 
 Use the paint tools to give it some character: a pair of eyes and a mouth. Resize it so a few could fit in a box.
 
-![choosing a fruit sprite and drawing a face on it.](images/choose-fruit.gif)
+![choosing a fruit sprite and drawing a face on it.](images/choose-fruit.gif){:width="450"}
 
 --- /task ---
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
 Position your fruit near the top of the stage, and under a `green flag`{:class="block3events"} add a `go to x: () y: ()`{:class="block3motion"} block.
 
@@ -109,4 +109,4 @@ end
 
 **Test:** Click the green flag, then click on the stage. Your fruit follows the mouse pointer left and right, but stays at the same height.
 
-![clicking to move the fruit along the top.](images/mouse-click.gif)
+![clicking to move the fruit along the top.](images/mouse-click.gif){:width="450"}

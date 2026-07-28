@@ -6,19 +6,17 @@ This can be done using the `touching color`{:class="block3sensing"} block.
 
 --- task ---
  
-![the fruit sprite.](images/fruit.png)
+![the fruit sprite.](images/fruit.png){:width="150"}
 
-In the fruit sprite give your fruit a solid outline so Scratch can spot when two are touching. 
+In the **paint editor**, change the outline of your **fruit sprite** to match the main fruit colour, or draw an outline in one colour all the way around the edge.
 
-In the **paint editor**, change the outline to match the main fruit colour, or draw an outline in one colour all the way around the edge.
-
-![recolouring the fruit's outline so it is one solid colour.](images/solid-colour.gif)
+![recolouring the fruit's outline so it is one solid colour.](images/solid-colour.gif){:width="450"}
 
 --- /task ---
 
 --- task ---
 
-Add an `if` and `touching color`{:class="block3sensing"} block inside the `forever`{:class="block3control"} loop. It plays a sound, then disappears with `delete this clone`{:class="block3control"}.
+Add an `if`{:class="block3control"} and `touching color`{:class="block3sensing"} block inside the `forever`{:class="block3control"} loop. It plays a sound, then disappears with `delete this clone`{:class="block3control"}.
 
 ```blocks3
 when I start as a clone
@@ -39,7 +37,9 @@ end
 end
 ```
 
-**Tip:** The `wait`{:class="block3control"} block gives the fruit already sitting there a moment to detect the colour too, which means they both disappear.
+> [!TIP]
+>
+> The `wait`{:class="block3control"} block gives the fruit already sitting there a moment to detect the colour too, which means they both disappear.
 
 --- /task ---
 
@@ -47,11 +47,11 @@ end
 
 To get the exact colour, click the colour box in `touching color`{:class="block3sensing"}, choose the eyedropper to select from your fruit.
 
-![using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif)
+![using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif){:width="450"}
 
 --- /task ---
 
 **Test:** click the green flag and drop two fruit in the same place. When they touch, they should make a sound and disappear.
 
-![two watermelons touching and one disappearing.](images/pop.gif)
+![two watermelons touching and one disappearing.](images/pop.gif){:width="450"}
 
