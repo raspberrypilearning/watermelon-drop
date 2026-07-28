@@ -12,22 +12,22 @@ In this step, you'll add the first piece of fruit and make it follow the mouse p
 
 Delete the cat sprite.
 
-![Deleting the cat sprite with the trashcan.](images/delete-cat.png){:width="300"}
+![Deleting the cat sprite with the trashcan.](images/delete-cat.png){:width="200"}
 
 --- /task ---
 
 
 --- task ---
 
-Choose a new sprite for your fruit — choose one from the library (or draw your own). It can be any fruit you like, or even an animal, or anything you want to see drop into the box. 
+Choose a new sprite for your fruit. You can choose one from the library or draw your own.
 
-![The Choose a Sprite menu.](images/choose-sprite.png){:width="300"}
+![The Choose a Sprite menu.](images/choose-sprite.png){:width="200"}
 
 --- /task ---
 
 --- task ---
 
-Use the paint tools to give it some character: a pair of eyes and a mouth. Resize it so a few could fit in a box.
+Use the paint tools to give it some character: a pair of eyes and a mouth. Resize it so a few could fit on the stage.
 
 ![choosing a fruit sprite and drawing a face on it.](images/choose-fruit.gif){:width="450"}
 
@@ -37,10 +37,11 @@ Use the paint tools to give it some character: a pair of eyes and a mouth. Resiz
 
 ![the fruit sprite.](images/fruit.png){:width="150"}
 
-Position your fruit near the top of the stage, and under a `green flag`{:class="block3events"} add a `go to x: () y: ()`{:class="block3motion"} block.
+Position your fruit near the top of the stage. Under the `green flag`{:class="block3events"}, add a `set drag mode [not draggable v]`{:class="block3sensing"} block so players can't drag it, then a `go to x: y:`{:class="block3motion"} block.
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 go to x: (0) y: (115)
 ```
 
@@ -50,10 +51,11 @@ go to x: (0) y: (115)
 
 Make the fruit follow the mouse pointer. 
 
-Wrap the `go to x: y:`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its `x`{:class="block3motion"} to the `mouse x`{:class="block3sensing"} position.
+Wrap the `go to x: y:`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its **x**{:class="block3motion"} to the `mouse x`{:class="block3sensing"} position.
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 +forever
 go to x: (mouse x) y: (115)
 end
@@ -67,6 +69,7 @@ Only move the fruit while the mouse is held down. First, wrap the `go to x: y:`{
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 forever
 +if <> then
 go to x: (mouse x) y: (115)
@@ -82,24 +85,9 @@ Now drop a `mouse down?`{:class="block3sensing"} block into the hexagon slot of 
 
 ```blocks3
 when green flag clicked
+set drag mode [not draggable v]
 forever
 +if <mouse down?> then
-go to x: (mouse x) y: (115)
-end
-end
-```
-
---- /task ---
-
---- task ---
-
-Stop players from dragging your fruit around the stage. Add a `set drag mode [not draggable v]`{:class="block3sensing"} block to the top of your `when green flag clicked`{:class="block3events"} blocks.
-
-```blocks3
-when green flag clicked
-+set drag mode [not draggable v]
-forever
-if <mouse down?> then
 go to x: (mouse x) y: (115)
 end
 end

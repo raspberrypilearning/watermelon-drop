@@ -6,7 +6,7 @@ In this step, you'll make the fruit drop down the screen.
 
 ![the fruit sprite.](images/fruit.png){:width="150"}
 
-In the fruit sprite add a `forever`{:class="block3control"} loop in `when I start as a clone`{:class="block3control"} and make it fall by changing the `y`{:class="block3motion"} position.
+Add a `forever`{:class="block3control"} loop in `when I start as a clone`{:class="block3control"} and make it fall by changing the `y`{:class="block3motion"} position.
 
 ```blocks3
 when I start as a clone
@@ -19,21 +19,12 @@ end
 
 --- /task ---
 
---- task ---
-
 **Test:** click the green flag and try dropping some fruit. Your fruit should fall, but the original fruit shows at the top too. 
 
-Add `hide`{:class="block3looks"} and `show`{:class="block3looks"} blocks to hide the original fruit, so only the falling clones show.
+--- task ---
+Add `hide`{:class="block3looks"} and `show`{:class="block3looks"} blocks to make only the clones show.
 
-```blocks3
-when I start as a clone
-go to x: (mouse x) y: (115)
-start sound (Pop v)
-+show
-forever
-change y by (-4)
-end
-```
+Hide the original fruit:
 
 ```blocks3
 when green flag clicked
@@ -47,8 +38,19 @@ end
 end
 ```
 
+And make the new clone show.
+
+```blocks3
+when I start as a clone
+go to x: (mouse x) y: (115)
+start sound (Pop v)
++show
+forever
+change y by (-4)
+end
+```
 --- /task ---
 
-Click the green flag and drop some fruit, check that each piece falls down the screen, and the original is hidden.
+**Test:** click the green flag and drop some fruit, check that each piece falls down the screen, and the original is hidden.
 
 ![the clones falling down the screen.](images/falling.gif){:width="450"}

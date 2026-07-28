@@ -1,8 +1,8 @@
 ## Make the fruit disappear
 
-Now for the interactive bit! When two of the fruit collide, they disappear.
+Now for the interactive bit! 
 
-This can be done using the `touching color`{:class="block3sensing"} block.
+In this step use the `touching color`{:class="block3sensing"} to make fruit disappear if they touch eachother.
 
 --- task ---
  
@@ -16,7 +16,7 @@ In the **paint editor**, change the outline of your **fruit sprite** to match th
 
 --- task ---
 
-Add an `if`{:class="block3control"} and `touching color`{:class="block3sensing"} block inside the `forever`{:class="block3control"} loop. It plays a sound, then disappears with `delete this clone`{:class="block3control"}.
+Add `if`{:class="block3control"} and `touching color`{:class="block3sensing"} inside the `forever`{:class="block3control"} loop.
 
 ```blocks3
 when I start as a clone
@@ -28,26 +28,67 @@ change y by (-4)
 if <touching (Floor v)?> then
 change y by (4.1)
 end
-+if <touching color (#4e9a06)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Lo Gliss Tabla v)
-delete this clone
++if <touching color ()?> then
 end
 end
 ```
-
-> [!TIP]
->
-> The `wait`{:class="block3control"} block gives the fruit already sitting there a moment to detect the colour too, which means they both disappear.
 
 --- /task ---
 
 --- task ---
 
-To get the exact colour, click the colour box in `touching color`{:class="block3sensing"}, choose the eyedropper to select from your fruit.
+To get the exact colour, click the colour box in `touching color`{:class="block3sensing"} and choose the eyedropper to select from your fruit.
 
 ![using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif){:width="450"}
+
+--- /task ---
+
+
+--- task ---
+
+Add `change y`{:class="block3motion"} and `wait`{:class="block3control"} so that both the fruit move and wait a moment to detect the colours. 
+
+```blocks3
+forever
+if <touching color (#4e9a06)?> then
++change y by (-4.2)
++wait (0.2) seconds
+end
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Add a `start sound`{:class="block3sound"} block and choose a sound to go with your fruit. 
+
+```blocks3
+forever
+if <touching color (#4e9a06)?> then
+change y by (-4.2)
+wait (0.2) seconds
++start sound (Lo Gliss Tabla v)
+end
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Then make both clones disappear with `delete this clone`{:class="block3control"}.
+
+```blocks3
+forever
+if <touching color (#4e9a06)?> then
+change y by (-4.2)
+wait (0.2) seconds
+start sound (Lo Gliss Tabla v)
++delete this clone
+end
+end
+```
 
 --- /task ---
 

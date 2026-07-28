@@ -1,91 +1,79 @@
-## More challenges
+## Add a game over
 
-You've made a complete fruit-dropping game. Here are some more ways to make it your own. Try any that appeal to you — each one is optional.
-
---- task ---
-
-### Add music
-
-Choose a backdrop for the stage, then loop a sound track so your game has a soundtrack.
-
-```blocks3
-when green flag clicked
-forever
-play sound (your track v) until done
-end
-```
-
-![an example backdrop for the stage.](images/bd.png){:width="450"}
-
---- /task ---
-
-
---- task ---
-
-### Add a dropper sprite
-
-Add a sprite at the top that follows the mouse pointer, so the player can see where the next fruit will land. The example game uses a cloud — but you could give yours eyes and a mouth to make it a character.
-
-```blocks3
-when green flag clicked
-set drag mode [not draggable v]
-go to x: (-8) y: (159)
-forever
-set x to (mouse x)
-end
-```
-
-![the dropper sprite (a cloud with a face) at the top of the stage.](images/cloud-screen.png){:width="450"}
-
---- /task ---
-
---- task ---
-
-### Add a box or basket
-
-Draw a box or basket sprite for the fruit to fall into, and send it to the back so the fruit sit inside it.
-
-```blocks3
-when green flag clicked
-set drag mode [not draggable v]
-go to x: (0) y: (0)
-go to (back v) layer
-```
-
-![an example box for the fruit to fall into.](images/box-screen.png){:width="450"}
-
---- /task ---
+Make the game end when the fruit stack up too high.
 
 --- task ---
 
 ![the fruit sprite.](images/fruit.png){:width="150"}
 
-### Keep score
+At the bottom, inside the `forever`{:class="block3control"} loop, add another `if`{:class="block3control"} block.
 
-Add a `score`{:class="block3variables"} variable, set it to `0`{:class="block3variables"} when the flag is clicked, and `change score by ()`{:class="block3variables"} just before each `delete this clone`{:class="block3control"}. Give different fruit different points!
+Use a `more than`{:class="block3operators"} block, and drag the `y position`{:class="block3motion"} into the first box.
 
 ```blocks3
-change [score v] by (10)
+if <(costume [number v]) = (3)> then
+if <touching color (#edd51c)?> then
+change y by (-4.2)
+wait (0.2) seconds
+start sound (Squish Pop v)
 delete this clone
+end
+end
++if <(y position) > ()> then
+end
 ```
 
 --- /task ---
 
+
 --- task ---
 
-![the fruit sprite.](images/fruit.png){:width="150"}
+In the second box add the number you want to be the highest point. 
 
-### Add a game over
+```blocks3
++if <(y position) > (111)> then
+end
+```
 
-When a fruit ends up too high, the box has overflowed. In your clone's `forever`{:class="block3control"} loop, check its `y`{:class="block3motion"} position and `broadcast () and wait`{:class="block3events"} a `Game over` message.
+--- /task ---
+
+
+--- task ---
+
+If a fruit ends up higher than this number, `broadcast and wait`{:class="block3events"} a `Game over` message.
 
 ```blocks3
 if <(y position) > (111)> then
-broadcast (Game over v) and wait
++broadcast (Game over v) and wait
 end
 ```
 
-Then add a `Game over` sprite that hides at the start and shows when it gets the message:
+--- /task ---
+
+--- task ---
+
+Paint a new sprite and draw your **game over** screen.
+
+![painting a new sprite for the game over screen.](images/sprite-paint.png){:width="200"}
+
+--- /task ---
+
+--- task ---
+
+![the game over sprite.](images/game-over-sprite.png){:width="150"}
+
+Give it a `green flag`{:class="block3events"} that hides it at the start.
+
+```blocks3
+when green flag clicked
+hide
+```
+
+--- /task ---
+
+--- task ---
+
+Then make it show when it gets the `Game over` message. You can also add a `sound`{:class="block3sound"}.
 
 ```blocks3
 when I receive (Game over v)
@@ -95,6 +83,8 @@ play sound (Lose v) until done
 stop (all v)
 ```
 
-![an example game over screen.](images/game-over.png){:width="450"}
-
 --- /task ---
+
+**Test:** click the green flag and fill the box until the fruit reach the top — your game over screen should appear and the game should stop.
+
+![an example game over screen.](images/game-over.png){:width="450"}
