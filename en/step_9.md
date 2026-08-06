@@ -1,11 +1,11 @@
 ## Make the fruit stack
 
-In this step you'll make the fruit stack up when they don't match, so the box can fill.
+In this step, you'll make the fruit stack up when they don't match, so the box can fill.
 
 
 --- task ---
 
-![the fruit sprite.](images/fruit.png){:width="150"}
+![The fruit sprite.](images/fruit.png){:width="150"}
 
 For the first fruit costume, add an another `if`{:class="block3control"} block inside the `costume number`{:class="block3looks"} check.
 
@@ -45,7 +45,7 @@ end
 
 --- task ---
 
-Then add `touching color`{:class="block3sensing"} blocks for **both other fruits**.
+Then add `touching color`{:class="block3sensing"} blocks for **all your other fruits**.
 
 ```blocks3
 if <(costume [number v]) = (1)> then
@@ -60,16 +60,16 @@ end
 end
 ```
 
-To make sure you get the right colours, you can duplicate the ones you did in the last step.
+To make sure you get the right colours, you can duplicate the colour blocks you did in the last step.
 
-![duplicating the colour blocks for each fruit.](images/colour-duplicate.gif){:width="350"}
+![Duplicating the colour blocks for each fruit.](images/colour-duplicate.gif){:width="350"}
 
 --- /task ---
 
 
 --- task ---
 
-Then `change y`{:class="block3motion"} so the fruit stacks on top of another fruit in the same way as with the **floor**. 
+Then `change y`{:class="block3motion"} so the fruit stacks on top of another fruit in the same way as with the **Floor**. 
 
 ```blocks3
 if <(costume [number v]) = (1)> then
@@ -96,8 +96,8 @@ Do the same for your other two costumes, changing the two colours for the **two 
 
 > [!TIP]
 >
-> If you are using more than 3 fruits you will need to add the `touching color`{:class="block3sensing"} blocks for each extra fruit. You can embed more `or`{:class="block3operators"} blocks to do this.
+> If you are using more than 3 fruits, you will need to add the `touching color`{:class="block3sensing"} blocks for each extra fruit. You can embed more `or`{:class="block3operators"} blocks to do this.
 
-**Test:** click the green flag to see if different fruit now stack up into a pile, and matching fruit still disappear.
+**Test:** Click the green flag to see if different fruit now stack up into a pile, and matching fruit still disappear.
 
-![fruit of different types piling up in a stack.](images/stacking.gif){:width="450"}
+![Fruit of different types piling up in a stack.](images/stacking.gif){:width="450"}
