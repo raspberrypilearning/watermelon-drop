@@ -28,7 +28,7 @@ end
 
 --- task ---
 
-In the second box add the number you want to be the highest point. 
+In the second box, add the number you want to be the highest point. 
 
 ```blocks3
 +if <(y position) > (111)> then
@@ -54,13 +54,13 @@ end
 
 Paint a new sprite and draw your **game over** screen.
 
-![painting a new sprite for the game over screen.](images/sprite-paint.png){:width="200"}
+![Painting a new sprite for the 'Game over' screen.](images/sprite-paint.png){:width="200"}
 
 --- /task ---
 
 --- task ---
 
-![the game over sprite.](images/game-over-sprite.png){:width="150"}
+![The 'Game over' sprite.](images/game-over-sprite.png){:width="150"}
 
 Give it a `green flag`{:class="block3events"} that hides it at the start.
 
@@ -85,6 +85,6 @@ stop (all v)
 
 --- /task ---
 
-**Test:** click the green flag and fill the box until the fruit reach the top — your game over screen should appear and the game should stop.
+**Test:** Click the green flag and fill the box until the fruit reach the top — your 'Game over' screen should appear and the game should stop.
 
-![an example game over screen.](images/game-over.png){:width="450"}
+![An example 'Game over' screen.](images/game-over.png){:width="450"}
