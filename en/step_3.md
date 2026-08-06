@@ -8,7 +8,7 @@ The fruit you drop are **clones**, which are copies of the sprite that appear ev
 
 Add a `create clone`{:class="block3control"} block that makes a copy every time the mouse is clicked. There is a short `wait`{:class="block3control"} so you don't get hundreds appearing at once.
 
-Take the `go to x: y:`{:class="block3motion"} block out - the clone will use it next.
+Take the `go to x: y:`{:class="block3motion"} block out — the clone will use it next.
 
 ```blocks3
 when green flag clicked
@@ -40,7 +40,7 @@ go to x: (mouse x) y: (115)
 
 Choose a sound for when you drop the fruit. 
 
-First add a new sound in the **Sounds tab**. 
+First, add a new sound in the **Sounds tab**. 
 
 ![The Sounds tab, where you add a new sound.](images/sounds-tab.png){:width="450"} 
 
