@@ -19,7 +19,7 @@ end
 
 --- /task ---
 
-**Test:** click the green flag and try dropping some fruit. Your fruit should fall, but the original fruit shows at the top too. 
+**Test:** Click the green flag and try dropping some fruit. Your fruit should fall, but the original fruit should show at the top too. 
 
 --- task ---
 Add `hide`{:class="block3looks"} and `show`{:class="block3looks"} blocks to make only the clones show.
@@ -51,6 +51,6 @@ end
 ```
 --- /task ---
 
-**Test:** click the green flag and drop some fruit, check that each piece falls down the screen, and the original is hidden.
+**Test:** Click the green flag and drop some fruit. Check that each piece falls down the screen, and that the original fruit is hidden.
 
-![the clones falling down the screen.](images/falling.gif){:width="450"}
+![The clones falling down the screen.](images/falling.gif){:width="450"}

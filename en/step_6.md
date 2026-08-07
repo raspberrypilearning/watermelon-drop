@@ -2,15 +2,15 @@
 
 Now for the interactive bit! 
 
-In this step use the `touching color`{:class="block3sensing"} to make fruit disappear if they touch eachother.
+In this step, use the `touching color`{:class="block3sensing"} to make fruit disappear if they touch each other.
 
 --- task ---
  
-![the fruit sprite.](images/fruit.png){:width="150"}
+![The fruit sprite.](images/fruit.png){:width="150"}
 
 In the **paint editor**, change the outline of your **fruit sprite** to match the main fruit colour, or draw an outline in one colour all the way around the edge.
 
-![recolouring the fruit's outline so it is one solid colour.](images/solid-colour.gif){:width="450"}
+![Changing the colour of the fruit's outline so it is one solid colour.](images/solid-colour.gif){:width="450"}
 
 --- /task ---
 
@@ -39,7 +39,7 @@ end
 
 To get the exact colour, click the colour box in `touching color`{:class="block3sensing"} and choose the eyedropper to select from your fruit.
 
-![using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif){:width="450"}
+![Using the eyedropper to pick the fruit's colour for the touching-colour block.](images/eyedropper.gif){:width="450"}
 
 --- /task ---
 
@@ -104,7 +104,7 @@ end
 
 --- /task ---
 
-**Test:** click the green flag and drop two fruit in the same place. When they touch, they should make a sound and disappear.
+**Test:** Click the green flag and drop two fruit in the same place. When they touch, they should make a sound and disappear.
 
-![two watermelons touching and one disappearing.](images/pop.gif){:width="450"}
+![Two watermelons touching and one disappearing.](images/pop.gif){:width="450"}
 

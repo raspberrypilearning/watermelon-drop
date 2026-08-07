@@ -1,12 +1,12 @@
 ## More challenges
 
-You've made a complete fruit-dropping game. Here are some more ways to make it your own. Try any that appeal to you — each one is optional.
+You've made a complete fruit-dropping game. Here are some more ways to make it your own. Try any that you like — each one is optional.
 
 --- task ---
 
 ### Add music and backdrop
 
-![backdrop for the stage.](images/stage.png){:width="150"}
+![Backdrop for the stage.](images/stage.png){:width="150"}
 
 In the stage, choose a backdrop. 
 
