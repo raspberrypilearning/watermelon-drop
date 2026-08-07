@@ -3,96 +3,86 @@
 In this step, you'll make the fruit stack up when they don't match, so the box can fill.
 
 
---- task ---
+> [!TASK]
+>
+> ![The fruit sprite.](images/fruit.png){:width="150"}
+>
+> For the first fruit costume, add an another `if`{:class="block3control"} block inside the `costume number`{:class="block3looks"} check.
+>
+> ```blocks3
+> if <(costume [number v]) = (1)> then
+> if <touching color (#4e9a06)?> then
+> change y by (-4.2)
+> wait (0.2) seconds
+> start sound (Lo Gliss Tabla v)
+> delete this clone
+> end
+> +if <> then
+> end
+> end
+> ```
 
-![The fruit sprite.](images/fruit.png){:width="150"}
+> [!TASK]
+>
+> Drag over an `or`{:class="block3operators"} block.
+>
+> ```blocks3
+> if <(costume [number v]) = (1)> then
+> if <touching color (#4e9a06)?> then
+> change y by (-4.2)
+> wait (0.2) seconds
+> start sound (Lo Gliss Tabla v)
+> delete this clone
+> end
+> +if <<> or <>> then
+> end
+> end
+> ```
 
-For the first fruit costume, add an another `if`{:class="block3control"} block inside the `costume number`{:class="block3looks"} check.
-
-```blocks3
-if <(costume [number v]) = (1)> then
-if <touching color (#4e9a06)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Lo Gliss Tabla v)
-delete this clone
-end
-+if <> then
-end
-end
-```
-
---- /task ---
-
---- task ---
-
-Drag over an `or`{:class="block3operators"} block.
-
-```blocks3
-if <(costume [number v]) = (1)> then
-if <touching color (#4e9a06)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Lo Gliss Tabla v)
-delete this clone
-end
-+if <<> or <>> then
-end
-end
-```
-
---- /task ---
-
---- task ---
-
-Then add `touching color`{:class="block3sensing"} blocks for **all your other fruits**.
-
-```blocks3
-if <(costume [number v]) = (1)> then
-if <touching color (#4e9a06)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Lo Gliss Tabla v)
-delete this clone
-end
-+if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
-end
-end
-```
-
-To make sure you get the right colours, you can duplicate the colour blocks you did in the last step.
-
-![Duplicating the colour blocks for each fruit.](images/colour-duplicate.gif){:width="350"}
-
---- /task ---
+> [!TASK]
+>
+> Then add `touching color`{:class="block3sensing"} blocks for **all your other fruits**.
+>
+> ```blocks3
+> if <(costume [number v]) = (1)> then
+> if <touching color (#4e9a06)?> then
+> change y by (-4.2)
+> wait (0.2) seconds
+> start sound (Lo Gliss Tabla v)
+> delete this clone
+> end
+> +if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
+> end
+> end
+> ```
+>
+> To make sure you get the right colours, you can duplicate the colour blocks you did in the last step.
+>
+> ![Duplicating the colour blocks for each fruit.](images/colour-duplicate.gif){:width="350"}
 
 
---- task ---
-
-Then `change y`{:class="block3motion"} so the fruit stacks on top of another fruit in the same way as with the **Floor**. 
-
-```blocks3
-if <(costume [number v]) = (1)> then
-if <touching color (#4e9a06)?> then
-change y by (-4.2)
-wait (0.2) seconds
-start sound (Lo Gliss Tabla v)
-delete this clone
-end
-if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
-+change y by (4.1)
-end
-end
-```
-
---- /task ---
+> [!TASK]
+>
+> Then `change y`{:class="block3motion"} so the fruit stacks on top of another fruit in the same way as with the **Floor**. 
+>
+> ```blocks3
+> if <(costume [number v]) = (1)> then
+> if <touching color (#4e9a06)?> then
+> change y by (-4.2)
+> wait (0.2) seconds
+> start sound (Lo Gliss Tabla v)
+> delete this clone
+> end
+> if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
+> +change y by (4.1)
+> end
+> end
+> ```
 
 
---- task ---
-
-Do the same for your other two costumes, changing the two colours for the **two other** fruit.
-
---- /task ---
+> [!TASK]
+>
+> Do the same for your other two costumes, changing the two colours for the **two other** fruit.
 
 > [!TIP]
 >
