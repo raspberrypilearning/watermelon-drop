@@ -50,6 +50,10 @@ Add `change y`{:class="block3motion"} and `wait`{:class="block3control"} so that
 
 ```blocks3
 forever
+change y by (-4)
+if <touching (Floor v)?> then
+change y by (4.1)
+end
 if <touching color (#4e9a06)?> then
 +change y by (-4.2)
 +wait (0.2) seconds
@@ -65,6 +69,10 @@ Add a `start sound`{:class="block3sound"} block and choose a sound to go with yo
 
 ```blocks3
 forever
+change y by (-4)
+if <touching (Floor v)?> then
+change y by (4.1)
+end
 if <touching color (#4e9a06)?> then
 change y by (-4.2)
 wait (0.2) seconds
@@ -81,6 +89,10 @@ Then make both clones disappear with `delete this clone`{:class="block3control"}
 
 ```blocks3
 forever
+change y by (-4)
+if <touching (Floor v)?> then
+change y by (4.1)
+end
 if <touching color (#4e9a06)?> then
 change y by (-4.2)
 wait (0.2) seconds
