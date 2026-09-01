@@ -1,7 +1,7 @@
 title: Watermelon drop
 hero_image: images/banner.png
-description: Make a fruit-dropping game where matching fruit disappear, and try not to overflow the box.
-listed: false
+description: Make a fruit-dropping game in this Code Club Arcade project.
+listed: true
 pdf: false
 steps:
   - title: What you will make
