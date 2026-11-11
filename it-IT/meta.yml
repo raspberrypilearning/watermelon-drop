@@ -1,0 +1,24 @@
+title: Lancio di angurie
+hero_image: images/banner.png
+description: In questo progetto arcade per Code Club, crea un gioco in cui devi far cadere della frutta.
+listed: true
+pdf: false
+steps:
+  - title: Cosa creerai
+  - title: Aggiungi il tuo primo frutto
+    completion:
+      - engaged
+  - title: Clona il frutto
+  - title: Lasciali cadere
+  - title: Falli atterrare
+  - title: Fai sparire la frutta
+  - title: Aggiungi altra frutta
+  - title: Fai sparire ogni frutto
+  - title: Crea la pila di frutta
+  - title: Aggiungi un game over
+    completion:
+      - internal
+  - title: Più sfide
+    challenge: true
+    completion:
+      - external
