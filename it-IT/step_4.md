@@ -10,7 +10,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > +forever
 > change y by (-4)
@@ -41,7 +41,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > +show
 > forever

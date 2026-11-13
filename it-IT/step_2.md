@@ -48,7 +48,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 > when green flag clicked
 > set drag mode [non trascinabile v]
 > +forever
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > end
 > ```
 
@@ -61,7 +61,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 > set drag mode [non trascinabile v]
 > forever
 > +if <> then
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > end
 > end
 > ```

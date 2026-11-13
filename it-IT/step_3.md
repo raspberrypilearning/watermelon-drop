@@ -29,7 +29,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > ```
 
 > [!TASK]
@@ -52,7 +52,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > +start sound (Pop v)
 > ```
 

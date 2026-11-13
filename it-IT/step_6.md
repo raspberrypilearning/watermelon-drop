@@ -18,7 +18,7 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (x del mouse) y: (115)
+> go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > show
 > forever
