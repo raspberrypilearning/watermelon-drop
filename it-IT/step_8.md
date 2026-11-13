@@ -10,7 +10,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 >
 > ```blocks3
 > when I start as a clone
-> switch costume to (random (1) to (3))
+> switch costume to (pick random (1) to (3))
 > go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > show
