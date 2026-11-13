@@ -43,7 +43,7 @@ Hai creato un gioco completo in cui devi far cadere la frutta. Ecco altri modi p
 >
 > ```blocks3
 > when green flag clicked
-> go to (back v) layer
+> go to (secondo v) layer
 > ```
 
 > [!TASK]
