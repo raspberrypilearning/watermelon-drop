@@ -6,11 +6,11 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 >
 > ![Lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Per il primo costume da frutta, aggiungi un altro blocco `if`{:class="block3control"} all'interno del controllo `numero del costume`{:class="block3looks"}.
+> Per il primo costume da frutta, aggiungi un altro blocco `se`{:class="block3control"} all'interno del controllo `numero del costume`{:class="block3looks"}.
 >
 > ```blocks3
-> if <(costume [number v]) = (1)> then
-> if <touching color (#4e9a06)?> then
+> if <(costume [numero v]) = (1)> then
+> if <sta toccando il colore (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -26,8 +26,8 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 > Trascina sopra un blocco `or`{:class="block3operators"}.
 >
 > ```blocks3
-> if <(costume [number v]) = (1)> then
-> if <touching color (#4e9a06)?> then
+> if <(costume [numero v]) = (1)> then
+> if <sta toccando il colore (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -40,17 +40,17 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 
 > [!TASK]
 >
-> Quindi aggiungi i blocchi `touching color`{:class="block3sensing"} per **tutti gli altri tuoi frutti**.
+> Quindi aggiungi i blocchi `sta toccando il colore`{:class="block3sensing"} per **tutti gli altri tuoi frutti**.
 >
 > ```blocks3
-> if <(costume [number v]) = (1)> then
-> if <touching color (#4e9a06)?> then
+> if <(costume [numero v]) = (1)> then
+> if <sta toccando il colore (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
 > delete this clone
 > end
-> +if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
+> +if <<sta toccando il colore (#ec1c2c)?> or <sta toccando il colore (#edd51c)?>> then
 > end
 > end
 > ```
@@ -64,14 +64,14 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 > Quindi `cambia y`{:class="block3motion"} in modo che il frutto si impili sopra un altro frutto nello stesso modo in cui si fa con il **Pavimento**.
 >
 > ```blocks3
-> if <(costume [number v]) = (1)> then
-> if <touching color (#4e9a06)?> then
+> if <(costume [numero v]) = (1)> then
+> if <sta toccando il colore (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
 > delete this clone
 > end
-> if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
+> if <<toccando il colore (#ec1c2c)?> or <toccando il colore (#edd51c)?>> then
 > +change y by (4.1)
 > end
 > end
@@ -83,7 +83,7 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 
 > [!TIP]
 >
-> Se utilizzi più di 3 frutti, dovrai aggiungere i blocchi `touching color`{:class="block3sensing"} per ogni frutto aggiuntivo. Per fare ciò, puoi incorporare altri blocchi `or`{:class="block3operators"}.
+> Se utilizzi più di 3 frutti, dovrai aggiungere i blocchi `sta toccando il colore`{:class="block3sensing"} per ogni frutto aggiuntivo. Per fare ciò, puoi incorporare altri blocchi `o`{:class="block3operators"}.
 
 **Test:** Clicca sulla bandierina verde per vedere se i diversi frutti ora si impilano in un mucchio e se i frutti dello stesso tipo continuano a scomparire.
 

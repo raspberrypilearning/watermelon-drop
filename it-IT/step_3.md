@@ -12,10 +12,10 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [non trascinabile v]
 > forever
-> if <mouse down?> then
-> +create clone of (myself v)
+> if <pulsante del mouse premuto> then
+> +create clone of (me stesso v)
 > +wait (0.1) seconds
 > end
 > end
@@ -29,7 +29,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (x del mouse) y: (115)
 > ```
 
 > [!TASK]
@@ -52,7 +52,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (x del mouse) y: (115)
 > +start sound (Pop v)
 > ```
 

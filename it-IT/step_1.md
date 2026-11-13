@@ -5,6 +5,6 @@ Crea un divertente gioco di caduta della frutta ispirato al gioco dell'anguria (
 > [!NOPRINT]
 >
 > <div class="scratch-preview">
->  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1365018960/?autostart=false" frameborder="0"></iframe>
+>  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1438975147/?autostart=false" frameborder="0"></iframe>
 > </div>
 

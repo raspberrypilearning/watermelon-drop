@@ -10,7 +10,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (x del mouse) y: (115)
 > start sound (Pop v)
 > +forever
 > change y by (-4)
@@ -27,11 +27,11 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [non trascinabile v]
 > +hide
 > forever
-> if <mouse down?> then
-> create clone of (myself v)
+> if <pulsante del mouse premuto> then
+> create clone of (me stesso v)
 > wait (0.1) seconds
 > end
 > end
@@ -41,7 +41,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (x del mouse) y: (115)
 > start sound (Pop v)
 > +show
 > forever

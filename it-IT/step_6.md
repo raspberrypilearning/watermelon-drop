@@ -18,15 +18,15 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (x del mouse) y: (115)
 > start sound (Pop v)
 > show
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <sta toccando (Pavimento v)?> then
 > change y by (4.1)
 > end
-> +if <touching color ()?> then
+> +if <sta toccando il colore ()?> then
 > end
 > end
 > ```
@@ -44,10 +44,10 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <sta toccando (Pavimento v)?> then
 > change y by (4.1)
 > end
-> if <touching color (#4e9a06)?> then
+> if <sta toccando il colore (#4e9a06)?> then
 > +change y by (-4.2)
 > +wait (0.2) seconds
 > end
@@ -61,10 +61,10 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <sta toccando (Pavimento v)?> then
 > change y by (4.1)
 > end
-> if <touching color (#4e9a06)?> then
+> if <sta toccando il colore (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > +start sound (Lo Gliss Tabla v)
@@ -79,10 +79,10 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <sta toccando (Pavimento v)?> then
 > change y by (4.1)
 > end
-> if <touching color (#4e9a06)?> then
+> if <sta toccando il colore (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)

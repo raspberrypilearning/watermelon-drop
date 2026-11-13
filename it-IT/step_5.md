@@ -24,7 +24,7 @@ Aggiungi un pavimento e fai in modo che la frutta atterri su di esso.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [non trascinabile v]
 > go to x: (0) y: (-125)
 > ```
 
@@ -32,12 +32,12 @@ Aggiungi un pavimento e fai in modo che la frutta atterri su di esso.
 >
 > ![Lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Fai clic sullo sprite della **frutta**, aggiungi un blocco `se`{:class="block3control"} per verificare se il clone sta `toccando`{:class="block3sensing"} il pavimento. Se tocca il pavimento, si sposterà verso l'alto `cambiando`{:class="block3motion"} la **y**.
+> Fai clic sullo sprite della **frutta**, aggiungi un blocco `se`{:class="block3control"} per verificare se il clone `sta toccando`{:class="block3sensing"} il pavimento. Se tocca il pavimento, si sposterà verso l'alto `cambiando`{:class="block3motion"} la **y**.
 >
 > ```blocks3
 > forever
 > change y by (-4)
-> +if <touching (Floor v)?> then
+> +if <sta toccando (Pavimento v)?> then
 > change y by (4.1)
 > end
 > end
