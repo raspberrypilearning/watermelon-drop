@@ -28,7 +28,7 @@ In questa fase, aggiungerai altra frutta!
 
 > [!TASK]
 >
-> Ora aggiungi un `switch costume`{:class="block3looks"} e trascina il blocco `random`{:class="block3operators"}. Questo sceglierà un numero di costume casuale ogni volta, in modo che appaia un frutto diverso.
+> Ora aggiungi un `passa al costume`{:class="block3looks"} e trascina il blocco `numero a caso`{:class="block3operators"}. Questo sceglierà un numero di costume casuale ogni volta, in modo che appaia un frutto diverso.
 >
 > ```blocks3
 > when I start as a clone

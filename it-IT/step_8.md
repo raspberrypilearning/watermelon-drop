@@ -6,7 +6,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 >
 > ![lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Aggiungi un altro blocco `if`{:class="block3control"} e sposta al suo interno il blocco `if`{:class="block3control"} con `touching colour`{:class="block3sensing"}.
+> Aggiungi un altro blocco `se`{:class="block3control"} e sposta al suo interno il blocco `se`{:class="block3control"} con `sto toccando il colore`{:class="block3sensing"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -34,7 +34,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 >
 > ![lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Utilizza un `equals`{:class="block3operators"} e trascina il `numero del costume`{:class="block3looks"}. Questo controllerà se il numero del costume è `1`.
+> Utilizza un `uguale`{:class="block3operators"} e trascina il `numero del costume`{:class="block3looks"}. Questo controllerà se il numero del costume è `1`.
 >
 > ```blocks3
 > forever
@@ -55,13 +55,13 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 
 > [!TASK]
 >
-> Fai clic con il pulsante destro del mouse e **duplica** il blocco, in modo da poterlo aggiungere a tutti i frutti. I nuovi blocchi dovrebbero trovarsi sotto l'ultimo e all'interno del `forever`{:class="block3control"}.
+> Fai clic con il pulsante destro del mouse e **duplica** il blocco, in modo da poterlo aggiungere a tutti i frutti. I nuovi blocchi dovrebbero trovarsi sotto l'ultimo e all'interno del `per sempre`{:class="block3control"}.
 >
 > ![duplicazione del controllo del costume per ogni frutto.](images/duplicate-if.gif){:width="450"}
 
 > [!TASK]
 >
-> Cambia `equals`{:class="block3operators"} in `2` e usa il contagocce per il colore del tuo **secondo** costume. Puoi anche scegliere un suono diverso, se lo desideri.
+> Cambia `uguale`{:class="block3operators"} in `2` e usa il contagocce per il colore del tuo **secondo** costume. Puoi anche scegliere un suono diverso, se lo desideri.
 >
 > ```blocks3
 > forever
@@ -90,7 +90,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 
 > [!TASK]
 >
-> Poi duplicalo ancora una volta per il tuo **terzo** frutto. Aggiungi `equals`{:class="block3operators"} a `3` e usa il contagocce per quel colore.
+> Poi duplicalo ancora una volta per il tuo **terzo** frutto. Aggiungi `uguale`{:class="block3operators"} a `3` e usa il contagocce per quel colore.
 >
 > ```blocks3
 > +if <(costume [number v]) = (3)> then

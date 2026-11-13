@@ -30,7 +30,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 >
 > > Posizionate la frutta vicino alla parte superiore dello stage.
 > >
-> > Sotto la `bandiera verde`{:class="block3events"}, aggiungi un blocco `set drag mode`{:class="block3sensing"} e scegli **non trascinabile** dal menu a tendina in modo che i giocatori non possano trascinarlo. Quindi aggiungi `vai a x: y:`{:class="block3motion"}.
+> > Sotto la `bandiera verde`{:class="block3events"}, aggiungi un blocco `rendi lo sprite`{:class="block3sensing"} e scegli **non trascinabile** dal menu a tendina in modo che i giocatori non possano trascinarlo. Quindi aggiungi `vai a x: y:`{:class="block3motion"}.
 >
 > ```blocks3
 > when green flag clicked
@@ -42,7 +42,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 >
 > Fai in modo che la frutta segua il puntatore del mouse.
 >
-> Avvolgi il blocco `go to x: y:`{:class="block3motion"} in un ciclo `forever`{:class="block3control"} e cambia la sua posizione **x**{:class="block3motion"} con la posizione `mouse x`{:class="block3sensing"}.
+> Avvolgi il blocco `vai a x: y:`{:class="block3motion"} in un ciclo `per sempre`{:class="block3control"} e cambia la sua posizione **x**{:class="block3motion"} con la posizione `x del mouse`{:class="block3sensing"}.
 >
 > ```blocks3
 > when green flag clicked
@@ -54,7 +54,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 
 > [!TASK]
 >
-> Sposta la frutta solo tenendo premuto il pulsante del mouse. Innanzitutto, racchiudi il blocco `go to x: y:`{:class="block3motion"} in un blocco `if () then`{:class="block3control"}.
+> Sposta la frutta solo tenendo premuto il pulsante del mouse. Innanzitutto, racchiudi il blocco `vai a x: y:`{:class="block3motion"} in un blocco `se () allora`{:class="block3control"}.
 >
 > ```blocks3
 > when green flag clicked

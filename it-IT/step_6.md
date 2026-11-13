@@ -2,7 +2,7 @@
 
 Ora passiamo alla parte interattiva!
 
-In questo passaggio, usa il `touching color`{:class="block3sensing"} per far scomparire i frutti se si toccano.
+In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per far scomparire i frutti se si toccano.
 
 > [!TASK]
 >
@@ -14,7 +14,7 @@ In questo passaggio, usa il `touching color`{:class="block3sensing"} per far sco
 
 > [!TASK]
 >
-> Aggiungi `if`{:class="block3control"} e `touching color`{:class="block3sensing"} all'interno del ciclo `forever`{:class="block3control"}.
+> Aggiungi `se`{:class="block3control"} e `sta toccando il colore`{:class="block3sensing"} all'interno del ciclo `per sempre`{:class="block3control"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -33,13 +33,13 @@ In questo passaggio, usa il `touching color`{:class="block3sensing"} per far sco
 
 > [!TASK]
 >
-> Per ottenere il colore esatto, fai clic sulla casella del colore in `touching color`{:class="block3sensing"} e scegli il contagocce per selezionarlo dal tuo frutto.
+> Per ottenere il colore esatto, fai clic sulla casella del colore in `sta toccando il colore`{:class="block3sensing"} e scegli il contagocce per selezionarlo dal tuo frutto.
 >
 > ![Utilizzo del contagocce per selezionare il colore del frutto per il blocco di colore a contatto.](images/eyedropper.gif){:width="450"}
 
 > [!TASK]
 >
-> Aggiungi `change y`{:class="block3motion"} e `wait`{:class="block3control"} in modo che entrambi i frutti si muovano e attendano un momento per rilevare i colori.
+> Aggiungi `cambia y`{:class="block3motion"} e `attendi`{:class="block3control"} in modo che entrambi i frutti si muovano e attendano un momento per rilevare i colori.
 >
 > ```blocks3
 > forever
@@ -56,7 +56,7 @@ In questo passaggio, usa il `touching color`{:class="block3sensing"} per far sco
 
 > [!TASK]
 >
-> Aggiungi un blocco `start sound`{:class="block3sound"} e scegli un suono da abbinare alla tua frutta.
+> Aggiungi un blocco `avvia riproduzione`{:class="block3sound"} e scegli un suono da abbinare alla tua frutta.
 >
 > ```blocks3
 > forever
@@ -74,7 +74,7 @@ In questo passaggio, usa il `touching color`{:class="block3sensing"} per far sco
 
 > [!TASK]
 >
-> Quindi fai sparire entrambi i cloni con `delete this clone`{:class="block3control"}.
+> Quindi fai sparire entrambi i cloni con `elimina questo clone`{:class="block3control"}.
 >
 > ```blocks3
 > forever

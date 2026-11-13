@@ -6,7 +6,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ![lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Aggiungi un ciclo `forever`{:class="block3control"} in `when I start as a clone`{:class="block3control"} e fallo cadere modificando la posizione `y`{:class="block3motion"}.
+> Aggiungi un ciclo `per sempre`{:class="block3control"} in `quando vengo clonato`{:class="block3control"} e fallo cadere modificando la posizione `y`{:class="block3motion"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -21,7 +21,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 
 > [!TASK]
 >
-> Aggiungi i blocchi `hide`{:class="block3looks"} e `show`{:class="block3looks"} per visualizzare solo i cloni.
+> Aggiungi i blocchi `nascondi`{:class="block3looks"} e `mostra`{:class="block3looks"} per visualizzare solo i cloni.
 >
 > Nascondi il frutto originale:
 >

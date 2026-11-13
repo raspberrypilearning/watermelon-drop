@@ -6,9 +6,9 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ![lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Aggiungi un blocco `create clone`{:class="block3control"} che crea una copia ogni volta che si fa clic con il mouse. C'è un breve `wait`{:class="block3control"} in modo che non ne appaiano centinaia contemporaneamente.
+> Aggiungi un blocco `crea clone di`{:class="block3control"} che crea una copia ogni volta che si fa clic con il mouse. C'è un breve `attendi`{:class="block3control"} in modo che non ne appaiano centinaia contemporaneamente.
 >
-> Rimuovi il blocco `go to x: y:`{:class="block3motion"} — il clone lo utilizzerà in seguito.
+> Rimuovi il blocco `vai a x: y:`{:class="block3motion"} — il clone lo utilizzerà in seguito.
 >
 > ```blocks3
 > when green flag clicked
@@ -48,7 +48,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 
 > [!TASK]
 >
-> Quindi aggiungi un blocco `start sound`{:class="block3sound"} e seleziona il suono dal menu a tendina.
+> Quindi aggiungi un blocco `avvia la riproduzione`{:class="block3sound"} e seleziona il suono dal menu a tendina.
 >
 > ```blocks3
 > when I start as a clone
