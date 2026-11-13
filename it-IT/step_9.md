@@ -10,7 +10,7 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 >
 > ```blocks3
 > if <(costume [numero v]) = (1)> then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -27,7 +27,7 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 >
 > ```blocks3
 > if <(costume [numero v]) = (1)> then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -44,13 +44,13 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 >
 > ```blocks3
 > if <(costume [numero v]) = (1)> then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
 > delete this clone
 > end
-> +if <<sta toccando il colore (#ec1c2c)?> or <sta toccando il colore (#edd51c)?>> then
+> +if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
 > end
 > end
 > ```
@@ -65,13 +65,13 @@ In questa fase, dovrai impilare i frutti che non corrispondono, in modo che la s
 >
 > ```blocks3
 > if <(costume [numero v]) = (1)> then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
 > delete this clone
 > end
-> if <<toccando il colore (#ec1c2c)?> or <toccando il colore (#edd51c)?>> then
+> if <<touching color (#ec1c2c)?> or <touching color (#edd51c)?>> then
 > +change y by (4.1)
 > end
 > end

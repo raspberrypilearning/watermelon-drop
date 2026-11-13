@@ -12,14 +12,14 @@ Fai terminare il gioco quando la pila di frutta diventa troppo alta.
 >
 > ```blocks3
 > if <(costume [numero v]) = (3)> then
-> if <sta toccando il colore (#edd51c)?> then
+> if <touching color (#edd51c)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Squish Pop v)
 > delete this clone
 > end
 > end
-> +if <(posizione y) > ()> then
+> +if <(y position) > ()> then
 > end
 > ```
 
@@ -28,7 +28,7 @@ Fai terminare il gioco quando la pila di frutta diventa troppo alta.
 > Nella seconda casella, inserisci il numero che desideri rappresenti il punto più alto.
 >
 > ```blocks3
-> +if <(posizione y) > (111)> then
+> +if <(y position) > (111)> then
 > end
 > ```
 
@@ -37,7 +37,7 @@ Fai terminare il gioco quando la pila di frutta diventa troppo alta.
 > Se un frutto finisce per essere più alto di questo numero, trasmette e attendi un messaggio di "Game Over".
 >
 > ```blocks3
-> if <(posizione y) > (111)> then
+> if <(y position) > (111)> then
 > +broadcast (Game over v) and wait
 > end
 > ```
@@ -68,7 +68,7 @@ Fai terminare il gioco quando la pila di frutta diventa troppo alta.
 > go to (primo v) layer
 > show
 > play sound (Lose v) until done
-> stop (all v)
+> stop (tutto v)
 > ```
 
 **Test:** Clicca sulla bandierina verde e riempi la casella finché la frutta non raggiunge la cima: dovrebbe apparire la schermata "Game over" e il gioco dovrebbe terminare.

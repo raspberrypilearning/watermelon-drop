@@ -14,7 +14,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 > when green flag clicked
 > set drag mode [non trascinabile v]
 > forever
-> if <pulsante del mouse premuto> then
+> if <mouse down?> then
 > +create clone of (me stesso v)
 > +wait (0.1) seconds
 > end

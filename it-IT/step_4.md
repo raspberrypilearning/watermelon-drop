@@ -30,7 +30,7 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 > set drag mode [non trascinabile v]
 > +hide
 > forever
-> if <pulsante del mouse premuto> then
+> if <mouse down?> then
 > create clone of (me stesso v)
 > wait (0.1) seconds
 > end

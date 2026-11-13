@@ -10,17 +10,17 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 >
 > ```blocks3
 > when I start as a clone
-> switch costume to (numero a caso (1) to (3))
+> switch costume to (random (1) to (3))
 > go to x: (x del mouse) y: (115)
 > start sound (Pop v)
 > show
 > forever
 > change y by (-4)
-> if <sta toccando (Pavimento v)?> then
+> if <touching (Pavimento v)?> then
 > change y by (4.1)
 > end
 > +if < > then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -39,11 +39,11 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > ```blocks3
 > forever
 > change y by (-4)
-> if <sta toccando (Pavimento v)?> then
+> if <touching (Pavimento v)?> then
 > change y by (4.1)
 > end
 > +if <(costume [numero v]) = (1)> then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -66,11 +66,11 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > ```blocks3
 > forever
 > change y by (-4)
-> if <sta toccando (Pavimento v)?> then
+> if <touching (Pavimento v)?> then
 > change y by (4.1)
 > end
 > if <(costume [numero v]) = (1)> then
-> if <sta toccando il colore (#4e9a06)?> then
+> if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Lo Gliss Tabla v)
@@ -78,7 +78,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > end
 > end
 > +if <(costume [numero v]) = (2)> then
-> if <sta toccando il colore (#ec1c2c)?> then
+> if <touching color (#ec1c2c)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Chomp v)
@@ -94,7 +94,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 >
 > ```blocks3
 > +if <(costume [numero v]) = (3)> then
-> if <sta toccando il colore (#edd51c)?> then
+> if <touching color (#edd51c)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
 > start sound (Squish Pop v)

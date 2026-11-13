@@ -37,7 +37,7 @@ Aggiungi un pavimento e fai in modo che la frutta atterri su di esso.
 > ```blocks3
 > forever
 > change y by (-4)
-> +if <sta toccando (Pavimento v)?> then
+> +if <touching (Pavimento v)?> then
 > change y by (4.1)
 > end
 > end

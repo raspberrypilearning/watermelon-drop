@@ -74,7 +74,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 > when green flag clicked
 > set drag mode [non trascinabile v]
 > forever
-> +if <pulsante del mouse premuto> then
+> +if <mouse down?> then
 > go to x: (mouse x) y: (115)
 > end
 > end
