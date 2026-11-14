@@ -6,12 +6,12 @@ Fai terminare il gioco quando la pila di frutta diventa troppo alta.
 >
 > ![lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> In fondo, all'interno del ciclo `per sempre`{:class="block3control"}, aggiungi un altro blocco `se`{:class="block3control"}.
+> In fondo, all'interno del ciclo `forever`{:class="block3control"}, aggiungi un altro blocco `if`{:class="block3control"}.
 >
 > Utilizza un blocco `more than`{:class="block3operators"} e trascina la `posizione y`{:class="block3motion"} nella prima casella.
 >
 > ```blocks3
-> if <(costume [numero v]) = (3)> then
+> if <(costume [number v]) = (3)> then
 > if <touching color (#edd51c)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
@@ -61,14 +61,14 @@ Fai terminare il gioco quando la pila di frutta diventa troppo alta.
 
 > [!TASK]
 >
-> Quindi, fallo apparire quando viene visualizzato il messaggio "Game over". È possibile aggiungere anche un `suono`{:class="block3sound"}.
+> Quindi, fallo apparire quando viene visualizzato il messaggio "Game over". È possibile aggiungere anche un `sound`{:class="block3sound"}.
 >
 > ```blocks3
 > when I receive (Game over v)
-> go to (primo v) layer
+> go to (front v) layer
 > show
 > play sound (Lose v) until done
-> stop (tutto v)
+> stop (all v)
 > ```
 
 **Test:** Clicca sulla bandierina verde e riempi la casella finché la frutta non raggiunge la cima: dovrebbe apparire la schermata "Game over" e il gioco dovrebbe terminare.
