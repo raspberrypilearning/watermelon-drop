@@ -6,7 +6,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 >
 > ![lo sprite di frutta.](images/fruit.png){:width="150"}
 >
-> Aggiungi un altro blocco `se`{:class="block3control"} e sposta al suo interno il blocco `se`{:class="block3control"} con `sta toccando il colore`{:class="block3sensing"}.
+> Aggiungi un altro blocco `se`{:class="block3control"} e sposta al suo interno il blocco `se`{:class="block3control"} con `sto toccando il colore`{:class="block3sensing"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -16,7 +16,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > show
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > +if < > then
@@ -39,10 +39,10 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
-> +if <(costume [numero v]) = (1)> then
+> +if <(costume [number v]) = (1)> then
 > if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
@@ -66,10 +66,10 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
-> if <(costume [numero v]) = (1)> then
+> if <(costume [number v]) = (1)> then
 > if <touching color (#4e9a06)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
@@ -77,7 +77,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > delete this clone
 > end
 > end
-> +if <(costume [numero v]) = (2)> then
+> +if <(costume [number v]) = (2)> then
 > if <touching color (#ec1c2c)?> then
 > change y by (-4.2)
 > wait (0.2) seconds
@@ -93,7 +93,7 @@ In questo passaggio, farai scomparire ogni frutto quando corrisponde.
 > Poi duplicalo ancora una volta per il tuo **terzo** frutto. Aggiungi `uguale`{:class="block3operators"} a `3` e usa il contagocce per quel colore.
 >
 > ```blocks3
-> +if <(costume [numero v]) = (3)> then
+> +if <(costume [number v]) = (3)> then
 > if <touching color (#edd51c)?> then
 > change y by (-4.2)
 > wait (0.2) seconds

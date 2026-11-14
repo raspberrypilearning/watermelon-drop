@@ -38,7 +38,7 @@ In questa fase, aggiungerai altra frutta!
 > show
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then
