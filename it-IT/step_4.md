@@ -27,11 +27,11 @@ In questo passaggio, farai cadere la frutta sullo schermo.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [non trascinabile v]
+> set drag mode [not draggable v]
 > +hide
 > forever
 > if <mouse down?> then
-> create clone of (me stesso v)
+> create clone of (myself v)
 > wait (0.1) seconds
 > end
 > end
