@@ -1,0 +1,24 @@
+title: Watermeloen puzzel
+hero_image: images/banner.png
+description: Maak een spel waarin je fruit laat vallen in dit Code Club arcade project.
+listed: true
+pdf: false
+steps:
+  - title: Wat ga je maken
+  - title: Voeg je eerste fruit toe
+    completion:
+      - engaged
+  - title: Kloon het fruit
+  - title: Laat ze vallen
+  - title: Laat ze landen
+  - title: Laat het fruit verdwijnen
+  - title: Voeg meer fruit toe
+  - title: Laat al het fruit verdwijnen
+  - title: Laat het fruit opstapelen
+  - title: Voeg een game over toe
+    completion:
+      - internal
+  - title: Meer uitdagingen
+    challenge: true
+    completion:
+      - external

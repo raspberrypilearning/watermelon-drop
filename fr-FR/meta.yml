@@ -1,0 +1,24 @@
+title: Lâcher de pastèques
+hero_image: images/banner.png
+description: Crée un jeu de lâcher de fruits dans ce projet d'arcade Code Club.
+listed: true
+pdf: false
+steps:
+  - title: Ce que tu vas faire
+  - title: Ajouter ton premier fruit
+    completion:
+      - engaged
+  - title: Cloner le fruit
+  - title: Les lâcher
+  - title: Les faire atterrir
+  - title: Faire disparaître le fruit
+  - title: Ajouter plus de fruits
+  - title: Faire disparaître les fruits
+  - title: Empiler les fruits
+  - title: Ajouter un message Game Over
+    completion:
+      - internal
+  - title: Plus de défis
+    challenge: true
+    completion:
+      - external
