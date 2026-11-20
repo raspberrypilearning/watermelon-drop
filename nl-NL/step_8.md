@@ -11,12 +11,12 @@ In deze stap laat je alle vruchten verdwijnen zodra ze overeenkomen.
 > ```blocks3
 > when I start as a clone
 > switch costume to (pick random (1) to (3))
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > start sound (Pop v)
 > show
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > +if < > then
@@ -39,7 +39,7 @@ In deze stap laat je alle vruchten verdwijnen zodra ze overeenkomen.
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > +if <(costume [number v]) = (1)> then
@@ -66,7 +66,7 @@ In deze stap laat je alle vruchten verdwijnen zodra ze overeenkomen.
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > if <(costume [number v]) = (1)> then

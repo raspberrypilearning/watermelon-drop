@@ -37,7 +37,7 @@ Voeg een vloer toe en laat het fruit erop landen.
 > ```blocks3
 > forever
 > change y by (-4)
-> +if <touching (Floor v)?> then
+> +if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > end

@@ -19,7 +19,7 @@ Zorg ervoor dat het spel eindigt wanneer de stapel fruit te hoog wordt.
 > delete this clone
 > end
 > end
-> +if <(y position) > ()> then
+> +if <(y-positie) > ()> then
 > end
 > ```
 
@@ -28,7 +28,7 @@ Zorg ervoor dat het spel eindigt wanneer de stapel fruit te hoog wordt.
 > Vul in het tweede vakje het getal in dat je als hoogste punt wilt hebben.
 >
 > ```blocks3
-> +if <(y position) > (111)> then
+> +if <(y-positie) > (111)> then
 > end
 > ```
 
@@ -37,7 +37,7 @@ Zorg ervoor dat het spel eindigt wanneer de stapel fruit te hoog wordt.
 > Als een fruit hoger uitkomt dan dit getal, gebruik dan een`zend signaal en wacht`{:class="block3events"} blok om een `Game over` bericht te sturen.
 >
 > ```blocks3
-> if <(y position) > (111)> then
+> if <(y-positie) > (111)> then
 > +broadcast (Game over v) and wait
 > end
 > ```
@@ -65,10 +65,10 @@ Zorg ervoor dat het spel eindigt wanneer de stapel fruit te hoog wordt.
 >
 > ```blocks3
 > when I receive (Game over v)
-> go to (front v) layer
+> go to (voorgrond v) layer
 > show
 > play sound (Lose v) until done
-> stop (all v)
+> stop (alle v)
 > ```
 
 **Test:** Klik op de groene vlag en vul de doos tot de bovenkant met fruit: je 'Game over' scherm moet verschijnen en het spel moet stoppen.

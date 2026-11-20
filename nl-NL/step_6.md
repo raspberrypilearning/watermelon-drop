@@ -18,12 +18,12 @@ In deze stap gebruik je `raak ik kleur`{:class="block3sensing"} om fruit te late
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > start sound (Pop v)
 > show
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > +if <touching color ()?> then
@@ -44,7 +44,7 @@ In deze stap gebruik je `raak ik kleur`{:class="block3sensing"} om fruit te late
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then
@@ -61,7 +61,7 @@ In deze stap gebruik je `raak ik kleur`{:class="block3sensing"} om fruit te late
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then
@@ -79,7 +79,7 @@ In deze stap gebruik je `raak ik kleur`{:class="block3sensing"} om fruit te late
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Floor v)?> then
+> if <touching (Vloer v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then

@@ -15,7 +15,7 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 > ```blocks3
 > when green flag clicked
 > forever
-> play sound (your track v) until done
+> play sound (jouw liedje v) until done
 > end
 > ```
 
@@ -31,7 +31,7 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 > when green flag clicked
 > go to x: (-8) y: (159)
 > forever
-> set x to (mouse x)
+> set x to (muis x)
 > end
 > ```
 
@@ -43,7 +43,7 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 >
 > ```blocks3
 > when green flag clicked
-> go to (back v) layer
+> go to (achtergrond v) layer
 > ```
 
 > [!TASK]
@@ -62,10 +62,8 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 ***
 Dit project werd vertaald door vrijwilligers:
 
-[name]
+Iny van Beuningen
 
-[name]
-
-[name]
+Robert-Jan Kempenaar
 
 Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).

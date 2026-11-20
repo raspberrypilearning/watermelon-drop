@@ -48,7 +48,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 > when green flag clicked
 > set drag mode [not draggable v]
 > +forever
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > end
 > ```
 
@@ -61,7 +61,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 > set drag mode [not draggable v]
 > forever
 > +if <> then
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > end
 > end
 > ```
@@ -75,7 +75,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 > set drag mode [not draggable v]
 > forever
 > +if <mouse down?> then
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > end
 > end
 > ```

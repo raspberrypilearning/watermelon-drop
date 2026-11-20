@@ -15,7 +15,7 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 > set drag mode [not draggable v]
 > forever
 > if <mouse down?> then
-> +create clone of (myself v)
+> +create clone of (mijzelf v)
 > +wait (0.1) seconds
 > end
 > end
@@ -29,7 +29,7 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > ```
 
 > [!TASK]
@@ -52,7 +52,7 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (mouse x) y: (115)
+> go to x: (muis x) y: (115)
 > +start sound (Pop v)
 > ```
 
