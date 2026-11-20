@@ -27,7 +27,7 @@ In deze stap laat je het fruit op het scherm naar beneden vallen.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > +hide
 > forever
 > if <mouse down?> then

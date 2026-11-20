@@ -24,7 +24,7 @@ Voeg een vloer toe en laat het fruit erop landen.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > go to x: (0) y: (-125)
 > ```
 

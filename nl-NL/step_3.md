@@ -12,7 +12,7 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > forever
 > if <mouse down?> then
 > +create clone of (mijzelf v)

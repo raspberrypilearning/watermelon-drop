@@ -46,7 +46,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > +forever
 > go to x: (muis x) y: (115)
 > end
@@ -58,7 +58,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > forever
 > +if <> then
 > go to x: (muis x) y: (115)
@@ -72,7 +72,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > forever
 > +if <mouse down?> then
 > go to x: (muis x) y: (115)
