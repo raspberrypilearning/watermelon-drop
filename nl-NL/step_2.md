@@ -30,7 +30,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > > Plaats het fruit bovenaan het speelveld.
 > >
-> > Voeg onder de `groene vlag`{:class="block3events"} een `zet sleepbaar op `{:class="block3sensing"} blok toe en kies **niet sleepbaar** in het keuzemenu, zodat spelers het niet kunnen slepen. Voeg dan een `ga naar x: y:`{:class="block3motion"} blok toe.
+> > Voeg onder de `groene vlag`{:class="block3events"} een `zet sleepbaar op`{:class="block3sensing"} blok toe en kies **niet sleepbaar** in het keuzemenu, zodat spelers het niet kunnen slepen. Voeg dan een `ga naar x: y:`{:class="block3motion"} blok toe.
 >
 > ```blocks3
 > when green flag clicked

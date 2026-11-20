@@ -14,7 +14,7 @@ In deze stap gebruik je `raak ik kleur`{:class="block3sensing"} om fruit te late
 
 > [!TASK]
 >
-> Voeg `als`{:class="block3control"} en `raak ik kleur `{:class="block3sensing"} blokken toe binnen de `herhaal`{:class="block3control"} lus.
+> Voeg `als`{:class="block3control"} en `raak ik kleur`{:class="block3sensing"} blokken toe binnen de `herhaal`{:class="block3control"} lus.
 >
 > ```blocks3
 > when I start as a clone

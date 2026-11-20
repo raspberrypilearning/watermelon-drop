@@ -6,7 +6,7 @@ In deze stap laat je alle vruchten verdwijnen zodra ze overeenkomen.
 >
 > ![de fruit-sprite.](images/fruit.png){:width="150"}
 >
-> Voeg nog een `als`{:class="block3control"} blok toe en plaats het `als`{:class="block3control"} blok met `raak ik kleur `{:class="block3sensing"} blok erin.
+> Voeg nog een `als`{:class="block3control"} blok toe en plaats het `als`{:class="block3control"} blok met `raak ik kleur`{:class="block3sensing"} blok erin.
 >
 > ```blocks3
 > when I start as a clone
