@@ -34,7 +34,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [not draggable v]
+> set drag mode [niet sleepbaar v]
 > go to x: (0) y: (115)
 > ```
 
