@@ -5,6 +5,6 @@ Bouw een leuk spel waarbij je fruit laat vallen, geïnspireerd op het watermeloe
 > [!NOPRINT]
 >
 > <div class="scratch-preview">
->  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1365018960/?autostart=false" frameborder="0"></iframe>
+>  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1443373372/?autostart=false" frameborder="0"></iframe>
 > </div>
 
