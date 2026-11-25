@@ -42,7 +42,7 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > Zorg ervoor dat het fruit de muisaanwijzer volgt.
 >
-> Plaats het `ga naar x: y:`{:class="block3motion"} blok in een `herhaal`{:class="block3control"} lus en verander de **x**{:class="block3motion"} positie naar de `muis x`{:class="block3sensing"} positie.
+> Plaats het `ga naar x: y:`{:class="block3motion"} blok in een `herhaal`{:class="block3control"} lus en verander de `x` positie naar de `muis x`{:class="block3sensing"} positie.
 >
 > ```blocks3
 > when green flag clicked

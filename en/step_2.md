@@ -43,7 +43,7 @@ In this step, you'll add the first piece of fruit and make it follow the mouse p
 >
 > Make the fruit follow the mouse pointer. 
 >
-> Wrap the `go to x: y:`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its **x**{:class="block3motion"} to the `mouse x`{:class="block3sensing"} position.
+> Wrap the `go to x: y:`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its `x` to the `mouse x`{:class="block3sensing"} position.
 >
 > ```blocks3
 > when green flag clicked

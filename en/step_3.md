@@ -25,7 +25,7 @@ The fruit you drop are **clones**, which are copies of the sprite that appear ev
 >
 > Tell each clone what to do when it appears. 
 >
-> Add a `when I start as a clone`{:class="block3control"} block, and drag back in the `x: y:`{:class="block3motion"} position.
+> Add a `when I start as a clone`{:class="block3control"} block, and drag back in the `go to x: y:`{:class="block3motion"} position.
 >
 > ```blocks3
 > when I start as a clone
