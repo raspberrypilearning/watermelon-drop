@@ -34,7 +34,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [non trascinabile v]
+> set drag mode [not draggable v]
 > go to x: (0) y: (115)
 > ```
 
@@ -42,11 +42,11 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 >
 > Fai in modo che la frutta segua il puntatore del mouse.
 >
-> Avvolgi il blocco `vai a x: y:`{:class="block3motion"} in un ciclo `per sempre`{:class="block3control"} e cambia la sua posizione **x**{:class="block3motion"} con la posizione `x del mouse`{:class="block3sensing"}.
+> Wrap the `go to x: y:`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its `x` to the `mouse x`{:class="block3sensing"} position.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [non trascinabile v]
+> set drag mode [not draggable v]
 > +forever
 > go to x: (mouse x) y: (115)
 > end
@@ -58,7 +58,7 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [non trascinabile v]
+> set drag mode [not draggable v]
 > forever
 > +if <> then
 > go to x: (mouse x) y: (115)
@@ -68,11 +68,11 @@ In questo passaggio, aggiungerai il primo frutto e gli farai seguire il puntator
 
 > [!TASK]
 >
-> Ora trascina un blocco `pulsante del mouse premuto`{:class="block3sensing"} nello slot esagonale del blocco `se`{:class="block3control"}.
+> Ora trascina un blocco `mouse down?`{:class="block3sensing"} nello slot esagonale del blocco `if`{:class="block3control"}.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [non trascinabile v]
+> set drag mode [not draggable v]
 > forever
 > +if <mouse down?> then
 > go to x: (mouse x) y: (115)

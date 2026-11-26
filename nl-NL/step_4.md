@@ -10,7 +10,7 @@ In deze stap laat je het fruit op het scherm naar beneden vallen.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > +forever
 > change y by (-4)
@@ -27,11 +27,11 @@ In deze stap laat je het fruit op het scherm naar beneden vallen.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [niet sleepbaar v]
+> set drag mode [not draggable v]
 > +hide
 > forever
 > if <mouse down?> then
-> create clone of (mijzelf v)
+> create clone of (myself v)
 > wait (0.1) seconds
 > end
 > end
@@ -41,7 +41,7 @@ In deze stap laat je het fruit op het scherm naar beneden vallen.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > +show
 > forever
