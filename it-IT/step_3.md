@@ -12,10 +12,10 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [non trascinabile v]
+> set drag mode [not draggable v]
 > forever
 > if <mouse down?> then
-> +create clone of (me stesso v)
+> +create clone of (myself v)
 > +wait (0.1) seconds
 > end
 > end
@@ -25,7 +25,7 @@ I frutti che lasci cadere sono **cloni**, ovvero copie dello sprite che appare o
 >
 > Spiega a ciascun clone cosa fare quando appare.
 >
-> Aggiungi un blocco `quando avvio come clone`{:class="block3control"} e trascinalo nella posizione `x: y:`{:class="block3motion"}.
+> Add a `when I start as a clone`{:class="block3control"} block, and drag back in the `go to x: y:`{:class="block3motion"} position.
 >
 > ```blocks3
 > when I start as a clone

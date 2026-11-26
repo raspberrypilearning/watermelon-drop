@@ -30,11 +30,11 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > > Plaats het fruit bovenaan het speelveld.
 > >
-> > Voeg onder de `groene vlag`{:class="block3events"} een `zet sleepbaar op`{:class="block3sensing"} blok toe en kies **niet sleepbaar** in het keuzemenu, zodat spelers het niet kunnen slepen. Voeg dan een `ga naar x: y:`{:class="block3motion"} blok toe.
+> > Voeg onder de `groene vlag`{:class="block3events"} een `zet sleepbaar op `{:class="block3sensing"} blok toe en kies **niet sleepbaar** in het keuzemenu, zodat spelers het niet kunnen slepen. Voeg dan een `ga naar x: y:`{:class="block3motion"} blok toe.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [niet sleepbaar v]
+> set drag mode [not draggable v]
 > go to x: (0) y: (115)
 > ```
 
@@ -42,13 +42,13 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > Zorg ervoor dat het fruit de muisaanwijzer volgt.
 >
-> Plaats het `ga naar x: y:`{:class="block3motion"} blok in een `herhaal`{:class="block3control"} lus en verander de `x` positie naar de `muis x`{:class="block3sensing"} positie.
+> Wrap the `go to x: y:`{:class="block3motion"} block in a `forever`{:class="block3control"} loop, and change its `x` to the `mouse x`{:class="block3sensing"} position.
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [niet sleepbaar v]
+> set drag mode [not draggable v]
 > +forever
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > end
 > ```
 
@@ -58,10 +58,10 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [niet sleepbaar v]
+> set drag mode [not draggable v]
 > forever
 > +if <> then
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > end
 > end
 > ```
@@ -72,10 +72,10 @@ In deze stap voeg je het eerste stuk fruit toe en laat het de muisaanwijzer volg
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [niet sleepbaar v]
+> set drag mode [not draggable v]
 > forever
 > +if <mouse down?> then
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > end
 > end
 > ```
