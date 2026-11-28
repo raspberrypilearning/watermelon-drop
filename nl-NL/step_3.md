@@ -12,10 +12,10 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 >
 > ```blocks3
 > when green flag clicked
-> set drag mode [niet sleepbaar v]
+> set drag mode [not draggable v]
 > forever
 > if <mouse down?> then
-> +create clone of (mijzelf v)
+> +create clone of (myself v)
 > +wait (0.1) seconds
 > end
 > end
@@ -25,11 +25,11 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 >
 > Vertel elke kloon wat hij moet doen als hij verschijnt.
 >
-> Voeg een `wanneer ik als kloon start`{:class="block3control"} blok toe en sleep het `ga naar x: y:`{:class="block3motion"} blok er onder.
+> Add a `when I start as a clone`{:class="block3control"} block, and drag back in the `go to x: y:`{:class="block3motion"} position.
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > ```
 
 > [!TASK]
@@ -52,7 +52,7 @@ Het fruit dat je laat vallen zijn **klonen**, of kopieën van de sprite die vers
 >
 > ```blocks3
 > when I start as a clone
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > +start sound (Pop v)
 > ```
 

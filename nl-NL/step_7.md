@@ -33,12 +33,12 @@ In deze stap voeg je meer fruit toe!
 > ```blocks3
 > when I start as a clone
 > +switch costume to (pick random (1) to (3))
-> go to x: (muis x) y: (115)
+> go to x: (mouse x) y: (115)
 > start sound (Pop v)
 > show
 > forever
 > change y by (-4)
-> if <touching (Vloer v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then

@@ -23,7 +23,7 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > show
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > +if <touching color ()?> then
@@ -44,7 +44,7 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then
@@ -61,7 +61,7 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then
@@ -79,7 +79,7 @@ In questo passaggio, usa il `sta toccando il colore`{:class="block3sensing"} per
 > ```blocks3
 > forever
 > change y by (-4)
-> if <touching (Pavimento v)?> then
+> if <touching (Floor v)?> then
 > change y by (4.1)
 > end
 > if <touching color (#4e9a06)?> then

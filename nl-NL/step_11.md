@@ -15,7 +15,7 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 > ```blocks3
 > when green flag clicked
 > forever
-> play sound (jouw liedje v) until done
+> play sound (your track v) until done
 > end
 > ```
 
@@ -31,7 +31,7 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 > when green flag clicked
 > go to x: (-8) y: (159)
 > forever
-> set x to (muis x)
+> set x to (mouse x)
 > end
 > ```
 
@@ -43,7 +43,7 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 >
 > ```blocks3
 > when green flag clicked
-> go to (achtergrond v) layer
+> go to (back v) layer
 > ```
 
 > [!TASK]
@@ -52,18 +52,11 @@ Je hebt een compleet spel gemaakt waarbij je fruit laat vallen. Hier zijn nog ee
 >
 > Voeg een `score`{:class="block3variables"} variabele toe om er meer een spel van te maken.
 >
-> Stel deze in op `0` wanneer op de groene vlag wordt geklikt, en `verander score met`{:class="block3variables"} net voor elke `verwijder deze kloon`{:class="block3control"}. Geef elke fruitsoort verschillende punten!
+> Stel deze in op `0` wanneer op de groene vlag wordt geklikt, en `verander score met`{:class="block3variables"} net voor elke `verwijder deze kloon `{:class="block3control"}. Geef elke fruitsoort verschillende punten!
 >
 > ```blocks3
 > change [score v] by (10)
 > delete this clone
 > ```
 
-***
-Dit project werd vertaald door vrijwilligers:
 
-Iny van Beuningen
-
-Robert-Jan Kempenaar
-
-Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
